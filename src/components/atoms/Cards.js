@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+// Debería llamarse Card
+// Podría ser un styled(FlexBox)
 const Cards = styled.div`
   display: flex;
   flex-direction: ${({ direction }) => direction || 'column'};

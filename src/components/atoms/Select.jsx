@@ -11,8 +11,10 @@ const SelectStyled = styled.select`
 `
 
 function Select({ value, value2, value3, value4 }) {
+  // Faltan id, onChange, value, etc...
   return (
     <SelectStyled name="select">
+      {/* Aquí tienes que mapear, si hay 500 opciones, o simplemente cambian, esta manera no escala */}
       <option value="default" defaultValue={value}>
         {value}
       </option>

@@ -15,6 +15,7 @@ const SubHeaderStyled = styled(FlexBox)`
 function SubHeader({ ...props }) {
   return (
     <SubHeaderStyled {...props} direction="row">
+      {/* Cada Select debe tener un label asociado */}
       <Select
         value="Piso, chalet o garaje..."
         value2="Piso"

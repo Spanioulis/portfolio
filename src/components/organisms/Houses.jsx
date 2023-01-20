@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Grid } from '../../styles'
+// Mejor llamarlos CardHouseFeatured y CardHouse a secas
 import { CardHouse, CardHouseButton } from '../molecules'
 
 const GridStyled = styled(Grid)`
@@ -12,6 +13,7 @@ const GridStyled = styled(Grid)`
 function Houses() {
   return (
     <GridStyled>
+      {/* Intenta crear un array vacio y mapear sobre el mismo */}
       <CardHouse />
       <CardHouseButton />
       <CardHouseButton />

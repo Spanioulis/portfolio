@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
+// El icono solo debería de renderizar el icono, si le das un background gradient, no se pueden usar otros iconos en otros puntos de la app.
 const IconStyled = styled.span`
   color: ${({ color }) => color || 'whitesmoke'};
   background-color: ${({ backgroundColor }) => backgroundColor || '#0096c7'};
