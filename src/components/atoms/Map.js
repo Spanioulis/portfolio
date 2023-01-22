@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import map from '../../assets/map-bcn.png'
+import map from '../../assets/images/map-bcn.png'
 
 const Map = styled.div`
   background-image: url(${map});

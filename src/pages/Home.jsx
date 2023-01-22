@@ -1,13 +1,13 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { Title } from '../components/atoms'
+import { Text, Title } from '../components/atoms'
 import { colors, FlexBox } from '../styles'
 
 const HomeContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   align-items: center;
   padding-left: 15rem;
-  background-color: black;
   min-height: 100vh;
 `
 const ImageContainer = styled.div`
@@ -36,15 +36,20 @@ function Home() {
   return (
     <HomeContainer>
       <FlexBox>
-        <TitleStyled tag="h1" fontWeight="700" color={colors.font.main}>
-          Hola.
-        </TitleStyled>
-        <TitleStyled tag="h1" fontWeight="700" color={colors.font.secondary}>
+        <TitleStyled tag="h1">Hola.</TitleStyled>
+        <TitleStyled tag="h1" color={colors.font.secondary}>
           Soy
         </TitleStyled>
-        <TitleStyled tag="h1" fontWeight="700" color={colors.font.secondary}>
+        <TitleStyled tag="h1" color={colors.font.main}>
           Sergio
         </TitleStyled>
+      </FlexBox>
+      <FlexBox>
+        <Link to="/work">
+          <Text tag="xl">Work</Text>
+        </Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
       </FlexBox>
       <ImageContainer />
     </HomeContainer>

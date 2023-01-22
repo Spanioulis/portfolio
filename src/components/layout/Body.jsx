@@ -1,15 +1,27 @@
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import Header from './Header'
-import SubHeader from './SubHeader'
+// import SubHeader from './SubHeader'
 import { FlexBox } from '../../styles'
+import Header from './Header'
+
+const BodyContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: justify; */
+  /* padding-left: 30rem; */
+  min-height: 100vh;
+`
 
 function Body({ children }) {
   return (
-    <FlexBox>
-      <Header />
-      <SubHeader />
-      {children}
-    </FlexBox>
+    <BodyContainer>
+      <FlexBox>
+        <Header>sergio</Header>
+        {/* <SubHeader /> */}
+        {children}
+      </FlexBox>
+    </BodyContainer>
   )
 }
 

@@ -1,25 +1,13 @@
+import PropTypes from 'prop-types'
 import React from 'react'
-import styled from 'styled-components'
-import { FlexBox } from '../../styles'
+import { Text } from '../atoms'
 
-const HeaderStyled = styled(FlexBox)`
-  padding-left: 2rem;
-  padding-right: 2rem;
-`
-
-function Header() {
-  return (
-    <HeaderStyled direction="row" justify="space-between">
-      <div>MIPISO.com</div>
-      <div>
-        <ul>
-          <li>Buscador</li>
-          <li>Datos</li>
-          <li>Mi Perfil</li>
-        </ul>
-      </div>
-    </HeaderStyled>
-  )
+function Header({ children }) {
+  return <Text tag="xl">{children}</Text>
 }
 
 export default Header
+
+Header.propTypes = {
+  children: PropTypes.string.isRequired,
+}

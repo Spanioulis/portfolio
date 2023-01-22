@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 const FlexBox = styled.div`
-  display: flex;
   align-items: ${({ align }) => align || 'stretch'};
-  justify-content: ${({ justify }) => justify || 'flex-start'};
+  display: flex;
   flex-direction: ${({ direction }) => direction || 'column'};
+  justify-content: ${({ justify }) => justify || 'flex-start'};
 `
 
 export default FlexBox

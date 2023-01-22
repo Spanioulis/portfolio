@@ -2,12 +2,9 @@ const colors = {
   main: '#121212',
   secondary: '#0088CC',
   font: {
-    base: '#444',
-    main: 'whitesmoke',
-    // secondary: '#121212',
-    // secondary: '#379956',
-    // secondary: '#ffa323',
-    secondary: '#1c7293',
+    base: 'antiquewhite',
+    main: '#1c7293',
+    secondary: '#444',
   },
 }
 
