@@ -4,24 +4,26 @@ import PropTypes from 'prop-types'
 import { FlexBox } from '../../styles'
 import Header from './Header'
 
-const BodyContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  /* text-align: justify; */
-  /* padding-left: 30rem; */
+const BodyContainer = styled(FlexBox)`
+  padding-left: 30rem;
+  padding-right: 30rem;
+  text-align: justify;
   min-height: 100vh;
+`
+const HeaderContainer = styled(FlexBox)`
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 `
 
 function Body({ children }) {
   return (
-    <BodyContainer>
-      <FlexBox>
+    <>
+      <HeaderContainer className="header-container" align="flex-end">
         <Header>sergio</Header>
-        {/* <SubHeader /> */}
-        {children}
-      </FlexBox>
-    </BodyContainer>
+      </HeaderContainer>
+      <BodyContainer align="center">{children}</BodyContainer>
+    </>
   )
 }
 

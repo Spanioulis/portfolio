@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { Text, Title } from '../components/atoms'
+import { Title } from '../components/atoms'
 import { colors, FlexBox } from '../styles'
+import map from '../assets/images/map-bcn.png'
 
 const HomeContainer = styled.div`
   display: flex;
@@ -11,10 +12,13 @@ const HomeContainer = styled.div`
   min-height: 100vh;
 `
 const ImageContainer = styled.div`
-  background-image: url('../assets/map-bcn.png');
-  background-color: #cccccc;
+  height: 500px;
+  width: 100%;
+  margin-left: 3rem;
+  /* background-color: #cccccc; */
+  background-image: url(${map});
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-attachment: fixed;
   animation: fadeInBG 5s;
 
@@ -22,8 +26,11 @@ const ImageContainer = styled.div`
     0% {
       opacity: 0;
     }
+    50% {
+      opacity: 0.4;
+    }
     100% {
-      opacity: 0.5;
+      opacity: 0.8;
     }
   }
 `
@@ -45,13 +52,11 @@ function Home() {
         </TitleStyled>
       </FlexBox>
       <FlexBox>
-        <Link to="/work">
-          <Text tag="xl">Work</Text>
-        </Link>
+        <Link to="/work">Work</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
       </FlexBox>
-      <ImageContainer />
+      <ImageContainer>...</ImageContainer>
     </HomeContainer>
   )
 }
