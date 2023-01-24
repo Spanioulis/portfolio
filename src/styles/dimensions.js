@@ -8,11 +8,11 @@ const dimensions = {
   font: {
     base: '16px',
     h1: '7.8rem',
-    h2: '2.4rem',
-    h3: '1.87rem',
-    h4: '1.6rem',
-    h5: '1.33rem',
-    h6: '1.07rem',
+    h2: '5.85rem',
+    h3: '4.56rem',
+    h4: '4.37rem',
+    h5: '3.24rem',
+    h6: '2.93rem',
   },
 }
 // h1 { font-size: 2em; }
