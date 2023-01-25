@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Text } from '../atoms'
+import { useShown } from '../../hooks'
 
 const LinkStyled = styled(Link)`
   text-decoration: none;
@@ -14,15 +14,7 @@ const TextStyled = styled(Text)`
 `
 
 function Header({ children }) {
-  const [isShown, setIsShown] = useState(false)
-
-  const onMouseEnter = () => {
-    setIsShown(true)
-  }
-
-  const onMouseLeave = () => {
-    setIsShown(false)
-  }
+  const { onMouseEnter, onMouseLeave, isShown } = useShown()
 
   return (
     <LinkStyled to="/" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>

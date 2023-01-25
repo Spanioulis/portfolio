@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { Title } from '../components/atoms'
+import { Input } from '../components/atoms'
 import { colors, FlexBox } from '../styles'
 import map from '../assets/images/map-bcn.png'
+import { useShown } from '../hooks'
 
 const HomeContainer = styled.div`
   display: flex;
@@ -34,27 +35,92 @@ const ImageContainer = styled.div`
     }
   }
 `
+const LinkStyled = styled(Link)`
+  text-decoration: none;
+  margin-right: 2rem;
+`
 
-const TitleStyled = styled(Title)`
-  margin: 0.1rem;
+const InputStyled = styled(Input)`
+  background-color: ${colors.main};
+  text-decoration: none;
+  border: none;
 `
 
 function Home() {
+  const {
+    onMouseEnter,
+    onMouseLeave,
+    isShownWork,
+    isShownAbout,
+    isShownContact,
+  } = useShown()
+
   return (
     <HomeContainer>
       <FlexBox>
-        <TitleStyled tag="h1">Hola.</TitleStyled>
-        <TitleStyled tag="h1" color={colors.font.secondary}>
-          Soy
-        </TitleStyled>
-        <TitleStyled tag="h1" color={colors.font.main}>
-          Sergio
-        </TitleStyled>
-      </FlexBox>
-      <FlexBox>
-        <Link to="/work">Work</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <LinkStyled
+          to="/work"
+          onMouseEnter={(e) => onMouseEnter(e)}
+          onMouseLeave={(e) => onMouseLeave(e)}
+        >
+          {isShownWork ? (
+            <InputStyled
+              tag="h1"
+              color={colors.font.secondary}
+              type="button"
+              value="Work"
+            />
+          ) : (
+            <InputStyled
+              tag="h1"
+              color={colors.font.base}
+              type="button"
+              value="Hola."
+            />
+          )}
+        </LinkStyled>
+        <LinkStyled
+          to="/about"
+          onMouseEnter={(e) => onMouseEnter(e)}
+          onMouseLeave={(e) => onMouseLeave(e)}
+        >
+          {isShownAbout ? (
+            <InputStyled
+              tag="h1"
+              color={colors.font.secondary}
+              type="button"
+              value="About"
+            />
+          ) : (
+            <InputStyled
+              tag="h1"
+              color={colors.font.main}
+              type="button"
+              value="Soy"
+            />
+          )}
+        </LinkStyled>
+        <LinkStyled
+          to="/contact"
+          onMouseEnter={(e) => onMouseEnter(e)}
+          onMouseLeave={(e) => onMouseLeave(e)}
+        >
+          {isShownContact ? (
+            <InputStyled
+              tag="h1"
+              color={colors.font.secondary}
+              type="button"
+              value="Contacto"
+            />
+          ) : (
+            <InputStyled
+              tag="h1"
+              color={colors.font.main}
+              type="button"
+              value="Sergio"
+            />
+          )}
+        </LinkStyled>
       </FlexBox>
       <ImageContainer>...</ImageContainer>
     </HomeContainer>
