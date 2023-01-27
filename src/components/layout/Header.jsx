@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import { useHover } from '../../hooks'
 import { Text } from '../atoms'
-import { useShown } from '../../hooks'
 
 const LinkStyled = styled(Link)`
   text-decoration: none;
@@ -14,11 +14,11 @@ const TextStyled = styled(Text)`
 `
 
 function Header({ children }) {
-  const { onMouseEnter, onMouseLeave, isShown } = useShown()
+  const [workIsHovering, workOnHoverProps] = useHover()
 
   return (
-    <LinkStyled to="/" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-      {isShown ? (
+    <LinkStyled to="/" {...workOnHoverProps}>
+      {workIsHovering ? (
         <TextStyled tag="xl">{children}.home</TextStyled>
       ) : (
         <TextStyled tag="xl">{children}</TextStyled>

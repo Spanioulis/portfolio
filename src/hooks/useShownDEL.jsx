@@ -13,8 +13,10 @@ const useShown = () => {
       case 'Soy':
         setIsShownAbout(true)
         break
-      default:
+      case 'Sergio':
         setIsShownContact(true)
+        break
+      default:
         break
     }
   }
@@ -27,8 +29,10 @@ const useShown = () => {
       case 'About':
         setIsShownAbout(false)
         break
-      default:
+      case 'Contact':
         setIsShownContact(false)
+        break
+      default:
         break
     }
   }

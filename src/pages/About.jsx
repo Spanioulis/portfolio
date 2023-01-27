@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Body from '../components/layout/Body'
 import { Text, Title } from '../components/atoms'
 import { colors } from '../styles'
@@ -8,12 +9,17 @@ function About() {
       <Title color={colors.font.base} tag="h2">
         About
       </Title>
-      <Text color={colors.font.base}>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-        fugit, debitis tempore iusto pariatur nulla aliquid? Ipsa animi atque
-        nobis nesciunt eos facere optio facilis consequatur sequi, nemo ut ea
-        esse illum accusantium, dolore nam, sed magni corporis aliquid? Suscipit
-        soluta eos hic enim placeat sapiente possimus, dolores odit odio?
+      <Text color={colors.font.base} tag="xxl">
+        <blockquote>
+          "El objetivo de todo hombre no debe ser llegar a un punto, sino
+          avanzar desde donde está. Esfuérzate día a día, y antes de lo que
+          piensas volverás a estar orgulloso de ti."
+          <cite>
+            {' '}
+            - Martín Chicot, <i>El asesinato de Pitágoras (2013)</i>
+          </cite>
+          .
+        </blockquote>
       </Text>
     </Body>
   )
