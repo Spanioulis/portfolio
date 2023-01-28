@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { useHover } from '../../hooks'
 import { Text } from '../atoms'
+import 'animate.css'
 
 const LinkStyled = styled(Link)`
   text-decoration: none;
@@ -14,14 +15,18 @@ const TextStyled = styled(Text)`
 `
 
 function Header({ children }) {
-  const [workIsHovering, workOnHoverProps] = useHover()
+  const [headerIsHovering, headerOnHoverProps] = useHover()
 
   return (
-    <LinkStyled to="/" {...workOnHoverProps}>
-      {workIsHovering ? (
-        <TextStyled tag="xl">{children}.home</TextStyled>
+    <LinkStyled to="/" {...headerOnHoverProps}>
+      {headerIsHovering ? (
+        <TextStyled className="animate__animated animate__backInRight" tag="xl">
+          {children}.home
+        </TextStyled>
       ) : (
-        <TextStyled tag="xl">{children}</TextStyled>
+        <TextStyled tag="xl" className="animate__animated animate__flipInX">
+          {children}
+        </TextStyled>
       )}
     </LinkStyled>
   )

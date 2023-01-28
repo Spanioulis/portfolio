@@ -10,10 +10,16 @@ const HeaderContainer = styled(FlexBox)`
   top: 0;
 `
 const BodyContainer = styled(FlexBox)`
-  margin-left: 20rem;
-  margin-right: 20rem;
+  margin: 0rem 20rem 3rem 20rem;
   text-align: justify;
   min-height: 100vh;
+
+  @media (max-width: 768px) {
+    margin: 0rem 2rem;
+  }
+  @media (max-width: 1200px) {
+    margin: 0rem 5rem;
+  }
 `
 
 function Body({ children }) {
@@ -22,7 +28,7 @@ function Body({ children }) {
       <HeaderContainer className="header-container" align="flex-end">
         <Header>sergio</Header>
       </HeaderContainer>
-      <BodyContainer>{children}</BodyContainer>
+      <BodyContainer className="body-container">{children}</BodyContainer>
     </>
   )
 }
