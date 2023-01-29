@@ -1,4 +1,5 @@
 export { default as Button } from './Button'
+export { default as IconDrive } from './IconDrive'
 export { default as IconSVG } from './IconSVG'
 export { default as Image } from './Image'
 export { default as Input } from './Input'

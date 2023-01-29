@@ -11,7 +11,7 @@ const LinkStyled = styled(Link)`
 `
 const TextStyled = styled(Text)`
   margin-top: 5.5rem;
-  margin-right: 9rem;
+  margin-right: 8rem;
 `
 
 function Header({ children }) {
