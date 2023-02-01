@@ -14,7 +14,8 @@ function IconSVG({ d, fill, height, stroke, width }) {
       fill={fill}
       width={width}
       height={height}
-      viewBox="0 0 32 32"
+      // viewBox="0 0 32 32"
+      viewBox="-1.92 -1.92 35.84 35.84"
       xmlns="http://www.w3.org/2000/svg"
       stroke={stroke}
     >

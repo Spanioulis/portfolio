@@ -6,8 +6,8 @@ const GlobalStyle = createGlobalStyle`
     ${'' /* font-family: Open-Sans, Helvetica, Sans-Serif; */}
     ${'' /* font-family: 'Urbanist', sans-serif; */}
     ${'' /* font-family: 'Noto Sans', sans-serif; */}
-    font-family: 'DM Sans', sans-serif;
     ${'' /* font-family: 'Lato', sans-serif; */}
+    font-family: 'DM Sans', sans-serif;
     margin: 0;
     padding: 0;
   }

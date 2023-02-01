@@ -8,7 +8,7 @@ const LinkTextStyled = styled.a`
   font-weight: ${({ fontWeight }) => fontWeight || '300'};
   font-size: ${({ fontSize, tag }) => fontSize || dimensions[`${tag}`]};
   text-decoration: none;
-  margin: 0.5rem 0rem 0rem 0.8rem;
+  margin: 0.1rem 0rem 0rem 0.8rem;
   width: fit-content;
 `
 
@@ -34,6 +34,7 @@ function LinkText({
       href={href}
       tag={tag}
       target="_blank"
+      rel="noopener noreferrer"
     >
       {children}
     </LinkTextStyled>
