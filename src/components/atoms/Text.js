@@ -6,6 +6,7 @@ const Text = styled.p`
   font-weight: ${({ fontWeight }) => fontWeight || '100'};
   font-size: ${({ fontSize, tag }) => fontSize || dimensions[`${tag}`]};
   line-height: ${({ lineHeight }) => lineHeight || '1.5'};
+  margin: ${({ margin }) => margin || '1rem 0rem'};
 
   @media (max-width: 768px) {
     font-size: ${dimensions.xl};

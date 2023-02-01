@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Body from '../components/layout/Body'
 import { IconSVG, LinkText, Text, Title } from '../components/atoms'
 import { colors, FlexBox } from '../styles'
+import IconsDev from '../components/molecules/IconsDev'
 
 const IconContainer = styled.div`
   margin: 3.7rem 0rem 0rem 1.5rem;
@@ -11,7 +12,11 @@ const IconContainer = styled.div`
 function Work() {
   return (
     <Body>
-      <FlexBox direction="row" align="center">
+      <FlexBox
+        direction="row"
+        align="center"
+        className="animate__animated animate__fadeInLeft"
+      >
         <Title color={colors.font.base} tag="h4">
           Developer
         </Title>
@@ -28,10 +33,11 @@ function Work() {
           </LinkText>
         </IconContainer>
       </FlexBox>
+
       <Text
         color={colors.font.base}
         tag="xl"
-        className="animate__animated animate__lightSpeedInLeft"
+        className="animate__animated animate__fadeInLeft"
       >
         Hace un año aproximadamente, empecé en el Bootcamp de IT Academy
         (Cibernàrium - Barcelona Activa), donde he adquirido múltiples
@@ -40,7 +46,7 @@ function Work() {
       <Text
         color={colors.font.base}
         tag="xl"
-        className="animate__animated animate__lightSpeedInLeft"
+        className="animate__animated animate__fadeInLeft"
       >
         {' '}
         Hice una primera etapa de Fundamentos de la Programación con Vanilla
@@ -54,7 +60,7 @@ function Work() {
       <Text
         color={colors.font.base}
         tag="xl"
-        className="animate__animated animate__lightSpeedInLeft"
+        className="animate__animated animate__fadeInLeft"
       >
         La segunda mitad y más importante del itinerario, estuvo dedicada
         exclusivamente a la biblioteca React JS. Empezando por su sintaxis JSX,
@@ -63,19 +69,20 @@ function Work() {
         como React Router, Axios, fetch, debugging, consumo de datos de más
         APIs, Jest & react-testing-library. Hasta la creación de mi proyecto
         final{' '}
-        <a
+        {/* <a
           href="https://github.com/Spanioulis/app-book-released"
           target="_blank"
           rel="noreferrer noopener"
         >
           Ed-Mundo!
-        </a>
+        </a> */}
         , donde pude plasmar todos esos conocimientos aprendidos.
       </Text>
+      {/* TODO -> animaciones scroll a partir de aquí */}
       <Text
         color={colors.font.base}
         tag="xl"
-        className="animate__animated animate__lightSpeedInLeft"
+        className="animate__animated animate__fadeInLeft"
       >
         En diciembre de 2022 obtuve el certificado de desarrollador Front-end en
         ReactJS, y actualmente estoy acabando un curso de React JS Avanzado,
@@ -88,6 +95,12 @@ function Work() {
         ESLint, implementación PropTypes, etc. con entornos de desarrollo como
         VSC y CodeSandbox.
       </Text>
+      <FlexBox>
+        <Text tag="xxxl">
+          Lenguajes, bibliotecas, librerías & herramientas...
+        </Text>
+        <IconsDev />
+      </FlexBox>
     </Body>
   )
 }

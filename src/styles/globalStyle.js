@@ -14,10 +14,31 @@ const GlobalStyle = createGlobalStyle`
 
   /* Contenedor para las dos imágenes */
 .image-container {
-  margin-left: 43rem;
+  ${
+    '' /* position: absolute;
+ animation: fadeInBG 3s ease-in-out;  */
+  }
+  margin-left: 41.5rem;
   position: absolute;
-  width: 600px;
+  width: 500px;
   height: 100vh;
+
+  ${
+    '' /* @keyframes fadeInBG {
+     0% {
+     opacity: 0;
+     scale: 110%;
+       filter: blur(10px);
+     }
+     50% {
+       opacity: 0.5;
+       filter: blur(5px);
+     }
+     100% {
+       opacity: 1;
+     }
+  } */
+  }
 }
 
 /* Imagen original */
@@ -30,6 +51,8 @@ const GlobalStyle = createGlobalStyle`
   left: 0;
   -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
   mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
+
+
 }
 
 /* Copia de la imagen con bordes difuminados */
@@ -41,6 +64,8 @@ const GlobalStyle = createGlobalStyle`
   left: 0;
   filter: blur(5px);
 }
+
+
 
 `
 

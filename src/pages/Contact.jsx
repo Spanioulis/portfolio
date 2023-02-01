@@ -35,7 +35,7 @@ function Contact() {
           animationHover="animate__animated animate__jello"
           fontWeight="500"
           href="https://www.linkedin.com/in/sergio-paniagua-sanchez/"
-          tag="xl"
+          tag="xxl"
         >
           Linkedin
         </LinkText>
@@ -47,7 +47,7 @@ function Contact() {
           animationHover="animate__animated animate__jello"
           fontWeight="500"
           href="mailto:pani77sps@gmail.com"
-          tag="xl"
+          tag="xxl"
         >
           Email
         </LinkText>

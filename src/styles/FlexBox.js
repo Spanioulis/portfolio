@@ -5,6 +5,7 @@ const FlexBox = styled.div`
   display: flex;
   flex-direction: ${({ direction }) => direction || 'column'};
   justify-content: ${({ justify }) => justify || 'flex-start'};
+  flex-wrap: ${({ wrap }) => wrap || 'no-wrap'}; ;
 `
 
 export default FlexBox
