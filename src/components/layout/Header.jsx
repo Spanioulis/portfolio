@@ -20,7 +20,10 @@ function Header({ children }) {
   return (
     <LinkStyled to="/" {...headerOnHoverProps}>
       {headerIsHovering ? (
-        <TextStyled className="animate__animated animate__backInRight" tag="xl">
+        <TextStyled
+          className="animate__animated animate__lightSpeedOutRight animate__infinite	animate__slow"
+          tag="xl"
+        >
           {children}.home
         </TextStyled>
       ) : (

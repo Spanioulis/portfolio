@@ -4,8 +4,6 @@ import { FlexBox } from '../styles'
 import logo from '../assets/images/home_machu_picchu.png'
 import { InputLink } from '../components/molecules'
 
-// import '../App'
-
 const HomeContainer = styled.div`
   display: flex;
   align-items: center;

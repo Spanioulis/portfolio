@@ -7,7 +7,6 @@ import IconsDev from '../components/molecules/IconsDev'
 const IconContainer = styled.div`
   margin: 3.7rem 0rem 0rem 1.5rem;
 `
-
 function Work() {
   return (
     <Body>
@@ -56,50 +55,75 @@ function Work() {
         hacerlo más legible (con ECMAScript 6), y realicé un sprint con
         TypeScript consumiendo datos de una API Rest.
       </Text>
-      <Text
-        color={colors.font.base}
-        tag="xl"
-        className="animate__animated animate__fadeInLeft"
+      <div
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
       >
-        La segunda mitad y más importante del itinerario, estuvo dedicada
-        exclusivamente a la biblioteca React JS. Empezando por su sintaxis JSX,
-        estructura de componentes, hooks básicos (useState, useEffect,
-        useContext), custom hooks, etc. Junto con otros conceptos/herramientas
-        como React Router, Axios, fetch, debugging, consumo de datos de más
-        APIs, Jest & react-testing-library. Hasta la creación de mi proyecto
-        final{' '}
-        {/* <a
+        <Text
+          color={colors.font.base}
+          tag="xl"
+          className="animate__animated animate__fadeInLeft"
+        >
+          La segunda mitad y más importante del itinerario, estuvo dedicada
+          exclusivamente a la biblioteca React JS. Empezando por su sintaxis
+          JSX, estructura de componentes, hooks básicos (useState, useEffect,
+          useContext), custom hooks, etc. Junto con otros conceptos/herramientas
+          como React Router, Axios, fetch, debugging, consumo de datos de más
+          APIs, Jest & react-testing-library. Hasta la creación de mi proyecto
+          final{' '}
+          {/* <a
           href="https://github.com/Spanioulis/app-book-released"
           target="_blank"
           rel="noreferrer noopener"
         >
           Ed-Mundo!
         </a> */}
-        , donde pude plasmar todos esos conocimientos aprendidos.
-      </Text>
-      {/* TODO -> animaciones scroll a partir de aquí */}
-      <Text
-        color={colors.font.base}
-        tag="xl"
-        className="animate__animated animate__fadeInLeft"
-      >
-        En diciembre de 2022 obtuve el certificado de desarrollador Front-end en
-        ReactJS, y actualmente estoy acabando un curso de React JS Avanzado,
-        impartido por la misma IT Academy, donde estamos profundizando en la
-        generación de un código más limpio, reutilizable, seguro y capaz de
-        generar aplicaciones con mayor performance; creando proyectos
-        estructurados con metodología de diseño <i>Atomic Design</i> (atoms,
-        molecules, organisms), usando Redux & Redux Toolkit, useContext y
-        useReducer combinados, layouts con Styled Components, añadir reglas
-        ESLint, implementación PropTypes, etc. con entornos de desarrollo como
-        VSC y CodeSandbox.
-      </Text>
-      <FlexBox>
-        <Text tag="xxxl">
-          Lenguajes, bibliotecas, librerías & herramientas...
+          , donde pude plasmar todos esos conocimientos aprendidos.
         </Text>
+      </div>
+      <div
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
+        {' '}
+        <Text
+          color={colors.font.base}
+          tag="xl"
+          className="animate__animated animate__fadeInLeft"
+        >
+          En diciembre de 2022 obtuve el certificado de desarrollador Front-end
+          en ReactJS, y actualmente estoy acabando un curso de React JS
+          Avanzado, impartido por la misma IT Academy, donde estamos
+          profundizando en la generación de un código más limpio, reutilizable,
+          seguro y capaz de generar aplicaciones con mayor performance; creando
+          proyectos estructurados con metodología de diseño <i>Atomic Design</i>{' '}
+          (atoms, molecules, organisms), usando Redux & Redux Toolkit,
+          useContext y useReducer combinados, layouts con Styled Components,
+          añadir reglas ESLint, implementación PropTypes, etc. con entornos de
+          desarrollo como VSC y CodeSandbox.
+        </Text>
+      </div>
+      <div
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
+        {' '}
+        <FlexBox>
+          <Text tag="xxxl">
+            Lenguajes, bibliotecas, librerías & herramientas...
+          </Text>
+        </FlexBox>
+      </div>
+      <div
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
         <IconsDev />
-      </FlexBox>
+      </div>
     </Body>
   )
 }

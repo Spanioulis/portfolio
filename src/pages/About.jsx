@@ -44,45 +44,68 @@ function About() {
         haber tomado esta decisión. Sin duda, estoy seguro que esta será una
         experiencia enriquecedora y satisfactoria.
       </Text>
-      {/* TODO -> Añadir animación scroll */}
-      <Text
-        color={colors.font.base}
-        tag="xl"
-        className="animate__animated animate__fadeInUp"
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
       >
-        Me considero una persona resolutiva y autodidacta, organizada, afable, y
-        acostumbrada a trabajar en equipo y bajo presión. Aprendo rápido, soy
-        capaz de adquirir nuevas habilidades con relativa facilidad, y soy
-        curioso y con pensamiento analítico.
-      </Text>
-      <Text color={colors.font.base} tag="xl">
-        Puedes leer más sobre mi experiencia, habilidades y educación en el
-        siguiente enlace:
-      </Text>
-      <FlexBoxStyle direction="row" align="center">
-        <IconDrive />
-        <LinkText
-          animationHover="animate__animated animate__jello"
-          color={colors.font.tertiary}
-          fontWeight="500"
-          href="https://drive.google.com/file/d/1-JWWOgFbchccmhGsuNEe0lBe6eLyMNfI/view?usp=sharing"
+        <Text
+          className="animate__animated animate__fadeInUp"
+          color={colors.font.base}
           tag="xl"
         >
-          Mi CV
-        </LinkText>
-      </FlexBoxStyle>
-      <FlexBoxStyle direction="row" align="center">
-        <IconDrive />
-        <LinkText
-          animationHover="animate__animated animate__headShake"
-          color={colors.font.tertiary}
-          fontWeight="500"
-          href="https://drive.google.com/file/d/1D84FhiLtg-_zUNnVCEYc_Emi9zn6ngrP/view?usp=sharing"
-          tag="xl"
-        >
-          React JS - Bootcamp IT Academy Barcelona
-        </LinkText>
-      </FlexBoxStyle>
+          Me considero una persona resolutiva y autodidacta, organizada, afable,
+          y acostumbrada a trabajar en equipo y bajo presión. Aprendo rápido,
+          soy capaz de adquirir nuevas habilidades con relativa facilidad, y soy
+          curioso y con pensamiento analítico.
+        </Text>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
+        <Text color={colors.font.base} tag="xl">
+          Puedes leer más sobre mi experiencia, habilidades y educación en el
+          siguiente enlace:
+        </Text>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
+        <FlexBoxStyle direction="row" align="center">
+          <IconDrive />
+          <LinkText
+            animationHover="animate__animated animate__jello"
+            color={colors.font.tertiary}
+            fontWeight="500"
+            href="https://drive.google.com/file/d/1-JWWOgFbchccmhGsuNEe0lBe6eLyMNfI/view?usp=sharing"
+            tag="xl"
+          >
+            Mi CV
+          </LinkText>
+        </FlexBoxStyle>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
+        <FlexBoxStyle direction="row" align="center">
+          <IconDrive />
+          <LinkText
+            animationHover="animate__animated animate__headShake"
+            color={colors.font.tertiary}
+            fontWeight="500"
+            href="https://drive.google.com/file/d/1D84FhiLtg-_zUNnVCEYc_Emi9zn6ngrP/view?usp=sharing"
+            tag="xl"
+          >
+            React JS - Bootcamp IT Academy Barcelona
+          </LinkText>
+        </FlexBoxStyle>
+      </div>
     </Body>
   )
 }
