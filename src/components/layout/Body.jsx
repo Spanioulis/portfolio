@@ -12,7 +12,6 @@ const HeaderContainer = styled(FlexBox)`
 const BodyContainer = styled(FlexBox)`
   margin: 0rem 20rem 3rem 20rem;
   text-align: justify;
-  min-height: 100vh;
 
   @media (max-width: 768px) {
     margin: 0rem 2rem;

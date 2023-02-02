@@ -7,10 +7,6 @@ import { colors, FlexBox } from '../styles'
 const FlexBoxStyle = styled(FlexBox)`
   margin-top: 1.2rem;
 `
-// const TextStyle = styled(Text)`
-//   margin: 1rem 0rem;
-// `
-
 function About() {
   return (
     <Body>

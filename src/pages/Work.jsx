@@ -6,7 +6,6 @@ import IconsDev from '../components/molecules/IconsDev'
 
 const IconContainer = styled.div`
   margin: 3.7rem 0rem 0rem 1.5rem;
-  /* width: ; */
 `
 
 function Work() {

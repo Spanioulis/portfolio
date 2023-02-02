@@ -12,6 +12,9 @@ const InputStyled = styled(Input)`
   background-color: ${colors.main};
   text-decoration: none;
   border: none;
+  @media (max-width: 768px) {
+    font-size: 6.5rem !important;
+  }
 `
 function InputLink() {
   const [workIsHovering, workOnHoverProps] = useHover()

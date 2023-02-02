@@ -9,8 +9,13 @@ import { InputLink } from '../components/molecules'
 const HomeContainer = styled.div`
   display: flex;
   align-items: center;
-  margin: -2rem 0rem 0rem 10rem;
+  margin: 0rem 0rem 0rem 10rem;
   min-height: 100vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 0rem;
+  }
 `
 // const ImageContainer = styled(Image)`
 //   background-image: url(${logo});

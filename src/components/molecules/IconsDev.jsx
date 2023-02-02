@@ -132,7 +132,6 @@ function IconsDev() {
           fill="goldenrod"
         ></path>
       </svg>
-      {/* FALTAAAAAAAAAAAAAAN */}
       {/* Styled-components  */}
       <svg
         role="img"
