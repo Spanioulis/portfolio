@@ -1,16 +1,17 @@
 import { createGlobalStyle } from 'styled-components'
+import colors from './colors'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #000000;
-    font-family: 'DM Sans', sans-serif;
+    background-color: ${colors.main};
+    font-family: 'Roboto', sans-serif;
+    ${'' /* font-family: 'Lato', sans-serif; */}
+    ${'' /* font-family: 'DM Sans', sans-serif; */}
     ${'' /* font-family: 'Noto Sans', sans-serif; */}
     ${'' /* font-family: 'Urbanist', sans-serif; */}
     ${'' /*  */}
-    ${'' /* font-family: 'Lato', sans-serif; */}
-${'' /* font-family: 'Montserrat', sans-serif; */}
-${'' /* font-family: 'League Spartan', sans-serif; */}
-${'' /* font-family: 'Roboto', sans-serif; */}
+    ${'' /* font-family: 'Montserrat', sans-serif; */}
+    ${'' /* font-family: 'League Spartan', sans-serif; */}
     margin: 0;
     padding: 0;
     overflow-x: hidden;
