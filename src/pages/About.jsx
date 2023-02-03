@@ -2,21 +2,26 @@
 import styled from 'styled-components'
 import Body from '../components/layout/Body'
 import { IconDrive, LinkText, Text, Title } from '../components/atoms'
-import { colors, FlexBox } from '../styles'
+import { colors, dimensions, FlexBox } from '../styles'
 
 const FlexBoxStyle = styled(FlexBox)`
   margin-top: 0.5rem;
 `
+const TitleStyle = styled(Title)`
+  @media (max-width: 768px) {
+    font-size: ${dimensions.font.h6};
+  }
+`
 function About() {
   return (
     <Body>
-      <Title
+      <TitleStyle
+        className="animate__animated animate__fadeInUp"
         color={colors.font.base}
         tag="h4"
-        className="animate__animated animate__fadeInUp"
       >
         Sobre mí
-      </Title>
+      </TitleStyle>
       <Text
         as="blockquote"
         className="animate__animated animate__fadeInUp"
@@ -45,9 +50,9 @@ function About() {
         experiencia enriquecedora y satisfactoria.
       </Text>
       <div
-        data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
+        data-aos="fade-up"
       >
         <Text
           className="animate__animated animate__fadeInUp"
@@ -61,9 +66,9 @@ function About() {
         </Text>
       </div>
       <div
-        data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
+        data-aos="fade-up"
       >
         <Text color={colors.font.base} tag="xl">
           Puedes leer más sobre mi experiencia, habilidades y educación en el
@@ -71,9 +76,9 @@ function About() {
         </Text>
       </div>
       <div
-        data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
+        data-aos="fade-up"
       >
         <FlexBoxStyle direction="row" align="center">
           <IconDrive />
@@ -89,13 +94,13 @@ function About() {
         </FlexBoxStyle>
       </div>
       <div
-        data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
+        data-aos="fade-up"
       >
         <FlexBoxStyle
-          direction="row"
           align="center"
+          direction="row"
           margin="0rem 0rem 3rem 0rem"
         >
           <IconDrive />

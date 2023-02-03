@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-// import SubHeader from './SubHeader'
 import { FlexBox } from '../../styles'
 import Header from './Header'
 
@@ -11,14 +10,26 @@ const HeaderContainer = styled(FlexBox)`
   z-index: 1;
 `
 const BodyContainer = styled(FlexBox)`
-  margin: 0rem 20rem 5rem 20rem;
   text-align: justify;
 
-  @media (max-width: 768px) {
-    margin: 0rem 2rem;
+  @media only screen and (max-width: 600px) {
+    margin: 0rem 1.5rem;
   }
-  @media (max-width: 1200px) {
+
+  @media only screen and (min-width: 600px) {
+    margin: 0rem 3rem;
+  }
+
+  @media only screen and (min-width: 768px) {
     margin: 0rem 5rem;
+  }
+
+  @media only screen and (min-width: 992px) {
+    margin: 0rem 7rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin: 0rem 20rem 5rem 20rem;
   }
 `
 

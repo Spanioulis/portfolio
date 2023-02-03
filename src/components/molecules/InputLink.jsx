@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-// import PropTypes from 'prop-types'
-import { colors } from '../../styles'
+import { colors, dimensions } from '../../styles'
 import { Input } from '../atoms'
 import useHover from '../../hooks/useHover'
 
@@ -12,8 +11,25 @@ const InputStyled = styled(Input)`
   background-color: ${colors.main};
   text-decoration: none;
   border: none;
-  @media (max-width: 768px) {
-    font-size: 6.5rem !important;
+
+  @media only screen and (max-width: 600px) {
+    font-size: ${dimensions.font.h4};
+  }
+
+  @media only screen and (min-width: 600px) {
+    font-size: ${dimensions.font.h3};
+  }
+
+  @media only screen and (min-width: 768px) {
+    font-size: ${dimensions.font.h1};
+  }
+
+  @media only screen and (min-width: 992px) {
+    font-size: ${dimensions.font.h1};
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: ${dimensions.font.h1};
   }
 `
 function InputLink() {
@@ -26,16 +42,16 @@ function InputLink() {
       <LinkStyled to="/about" {...workOnHoverProps}>
         {workIsHovering ? (
           <InputStyled
-            tag="h1"
             color={colors.font.secondary}
+            padding="1rem"
+            tag="h1"
             type="button"
             value="Sobre mí"
-            padding="1rem"
           />
         ) : (
           <InputStyled
-            tag="h1"
             color={colors.font.base}
+            tag="h1"
             type="button"
             value="Hola."
           />
@@ -44,16 +60,16 @@ function InputLink() {
       <LinkStyled to="/work" {...aboutOnHoverProps}>
         {aboutIsHovering ? (
           <InputStyled
-            tag="h1"
             color={colors.font.secondary}
+            padding="1rem"
+            tag="h1"
             type="button"
             value="Developer"
-            padding="1rem"
           />
         ) : (
           <InputStyled
-            tag="h1"
             color={colors.font.main}
+            tag="h1"
             type="button"
             value="Soy"
           />
@@ -62,16 +78,16 @@ function InputLink() {
       <LinkStyled to="/contact" {...contactOnHoverProps}>
         {contactIsHovering ? (
           <InputStyled
-            tag="h1"
             color={colors.font.secondary}
+            padding="1rem"
+            tag="h1"
             type="button"
             value="Contacto"
-            padding="1rem"
           />
         ) : (
           <InputStyled
-            tag="h1"
             color={colors.font.main}
+            tag="h1"
             type="button"
             value="Sergio"
           />
@@ -80,11 +96,5 @@ function InputLink() {
     </>
   )
 }
-
-// InputLink.propTypes = {
-//   to: PropTypes.string.isRequired,
-//   color: PropTypes.string,
-//   onClick: PropTypes.func,
-// }
 
 export default InputLink

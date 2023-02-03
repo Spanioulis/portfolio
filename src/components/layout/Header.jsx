@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { useHover } from '../../hooks'
 import { Text } from '../atoms'
-import 'animate.css'
 
 const LinkStyled = styled(Link)`
   text-decoration: none;

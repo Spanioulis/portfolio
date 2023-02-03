@@ -1,18 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FlexBox } from '../../styles'
-// import { colors } from '../../styles'
 
 const FlexBoxStyle = styled(FlexBox)`
   gap: 1rem;
 `
-
 function IconsDev() {
-  /*   
- width="52px" height="52px" 
-   "goldenrod" 
-   */
-
   return (
     <FlexBoxStyle direction="row" wrap="wrap">
       {/* React */}

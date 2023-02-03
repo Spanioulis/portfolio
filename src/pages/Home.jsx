@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-// import { Image } from '../components/atoms'
 import { FlexBox } from '../styles'
 import logo from '../assets/images/home_machu_picchu.png'
 import { InputLink } from '../components/molecules'
@@ -11,21 +10,11 @@ const HomeContainer = styled.div`
   min-height: 100vh;
 
   @media (max-width: 768px) {
+    align-items: flex-start;
     flex-direction: column;
-    margin: 0rem;
+    margin: 2rem 0rem 0rem 2rem;
   }
 `
-// const ImageContainer = styled(Image)`
-//   background-image: url(${logo});
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   position: absolute;
-//   right: 5%;
-//   border-top: 1px solid #000;
-//   filter: blur(5px);
-// `
-
 function Home() {
   return (
     <HomeContainer>

@@ -3,11 +3,14 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: #000000;
-    ${'' /* font-family: Open-Sans, Helvetica, Sans-Serif; */}
-    ${'' /* font-family: 'Urbanist', sans-serif; */}
-    ${'' /* font-family: 'Noto Sans', sans-serif; */}
-    ${'' /* font-family: 'Lato', sans-serif; */}
     font-family: 'DM Sans', sans-serif;
+    ${'' /* font-family: 'Noto Sans', sans-serif; */}
+    ${'' /* font-family: 'Urbanist', sans-serif; */}
+    ${'' /*  */}
+    ${'' /* font-family: 'Lato', sans-serif; */}
+${'' /* font-family: 'Montserrat', sans-serif; */}
+${'' /* font-family: 'League Spartan', sans-serif; */}
+${'' /* font-family: 'Roboto', sans-serif; */}
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -33,31 +36,10 @@ const GlobalStyle = createGlobalStyle`
 
   /* Contenedor para las dos imágenes */
 .image-container {
-  ${
-    '' /* position: absolute;
- animation: fadeInBG 3s ease-in-out;  */
-  }
   margin-left: 41.5rem;
   position: absolute;
   width: 500px;
   height: 100vh;
-
-  ${
-    '' /* @keyframes fadeInBG {
-     0% {
-     opacity: 0;
-     scale: 110%;
-       filter: blur(10px);
-     }
-     50% {
-       opacity: 0.5;
-       filter: blur(5px);
-     }
-     100% {
-       opacity: 1;
-     }
-  } */
-  }
 }
 
 /* Imagen original */
@@ -86,17 +68,13 @@ const GlobalStyle = createGlobalStyle`
   .image-container {
   margin: 1rem;
   position: relative;
-  width: 400px;
+  width: 300px;
 }
 .image-container img {
-  width: 300px;
+  width: 250px;
   top: 3rem;
-  left: 3rem
-
+  left: 1rem
 }
-
-
  }
 `
-
 export default GlobalStyle

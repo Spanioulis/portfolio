@@ -32,8 +32,8 @@ function Project() {
           <FlexBox direction="row" align="center">
             <LinkTextStyled
               href="https://ed-mundo.netlify.app/"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               {' '}
               <img src={link} alt="Link logo" width="26px" />
@@ -43,8 +43,8 @@ function Project() {
               color={colors.font.main}
               fontWeight="500"
               href="https://ed-mundo.netlify.app/"
-              tag="xl"
               margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
             >
               Ver demo
             </LinkText>
@@ -52,8 +52,8 @@ function Project() {
           <FlexBox direction="row" align="center">
             <LinkTextStyled
               href="https://github.com/Spanioulis/app-book-released"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               {' '}
               <img src={repo} alt="Repo logo" width="26px" />
@@ -63,8 +63,8 @@ function Project() {
               color={colors.font.main}
               fontWeight="500"
               href="https://github.com/Spanioulis/app-book-released"
-              tag="xl"
               margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
             >
               Repositorio
             </LinkText>
@@ -85,8 +85,8 @@ function Project() {
           <FlexBox direction="row" align="center">
             <LinkTextStyled
               href="https://swapi-spanioulis.netlify.app/"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               {' '}
               <img src={link} alt="Link logo" width="26px" />
@@ -96,8 +96,8 @@ function Project() {
               color={colors.font.main}
               fontWeight="500"
               href="https://swapi-spanioulis.netlify.app/"
-              tag="xl"
               margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
             >
               Ver demo
             </LinkText>
@@ -105,8 +105,8 @@ function Project() {
           <FlexBox direction="row" align="center">
             <LinkTextStyled
               href="https://github.com/Spanioulis/swapi"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               {' '}
               <img src={repo} alt="Repo logo" width="26px" />
@@ -116,8 +116,8 @@ function Project() {
               color={colors.font.main}
               fontWeight="500"
               href="https://github.com/Spanioulis/swapi"
-              tag="xl"
               margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
             >
               Repositorio
             </LinkText>
@@ -138,8 +138,8 @@ function Project() {
           <FlexBox direction="row" align="center">
             <LinkTextStyled
               href="https://budgets-web.netlify.app/"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               {' '}
               <img src={link} alt="Link logo" width="26px" />
@@ -149,8 +149,8 @@ function Project() {
               color={colors.font.main}
               fontWeight="500"
               href="https://budgets-web.netlify.app/"
-              tag="xl"
               margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
             >
               Ver demo
             </LinkText>
@@ -158,8 +158,8 @@ function Project() {
           <FlexBox direction="row" align="center">
             <LinkTextStyled
               href="https://github.com/Spanioulis/budgets-app"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               {' '}
               <img src={repo} alt="Repo logo" width="26px" />
@@ -169,8 +169,8 @@ function Project() {
               color={colors.font.main}
               fontWeight="500"
               href="https://github.com/Spanioulis/budgets-app"
-              tag="xl"
               margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
             >
               Repositorio
             </LinkText>
