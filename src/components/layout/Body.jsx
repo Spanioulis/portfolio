@@ -8,9 +8,10 @@ const HeaderContainer = styled(FlexBox)`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 `
 const BodyContainer = styled(FlexBox)`
-  margin: 0rem 20rem 3rem 20rem;
+  margin: 0rem 20rem 5rem 20rem;
   text-align: justify;
 
   @media (max-width: 768px) {

@@ -7,8 +7,8 @@ const LinkTextStyled = styled.a`
   color: ${({ color }) => color || colors.font.main};
   font-weight: ${({ fontWeight }) => fontWeight || '300'};
   font-size: ${({ fontSize, tag }) => fontSize || dimensions[`${tag}`]};
+  margin: ${({ margin }) => margin || '0.1rem 0rem 0rem 0.8rem'};
   text-decoration: none;
-  margin: 0.1rem 0rem 0rem 0.8rem;
   width: fit-content;
 `
 
@@ -21,6 +21,7 @@ function LinkText({
   href,
   animation,
   animationHover,
+  margin,
 }) {
   const [linkIsHovering, linkOnHoverProps] = useHover()
 
@@ -32,6 +33,7 @@ function LinkText({
       fontSize={fontSize}
       fontWeight={fontWeight}
       href={href}
+      margin={margin}
       tag={tag}
       target="_blank"
       rel="noopener noreferrer"
@@ -44,11 +46,12 @@ function LinkText({
 LinkText.propTypes = {
   animation: PropTypes.string,
   animationHover: PropTypes.string,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   color: PropTypes.string,
   fontSize: PropTypes.string,
   fontWeight: PropTypes.string,
   href: PropTypes.string.isRequired,
+  margin: PropTypes.string,
   tag: PropTypes.string,
 }
 

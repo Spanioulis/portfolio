@@ -3,6 +3,7 @@ import Body from '../components/layout/Body'
 import { IconSVG, LinkText, Text, Title } from '../components/atoms'
 import { colors, FlexBox } from '../styles'
 import IconsDev from '../components/molecules/IconsDev'
+import { Project } from '../components/molecules'
 
 const IconContainer = styled.div`
   margin: 3.7rem 0rem 0rem 1.5rem;
@@ -31,7 +32,6 @@ function Work() {
           </LinkText>
         </IconContainer>
       </FlexBox>
-
       <Text
         color={colors.font.base}
         tag="xl"
@@ -112,7 +112,20 @@ function Work() {
       >
         {' '}
         <FlexBox>
-          <Text tag="xxxl">
+          <Title tag="h5" margin="2rem 0rem 0.2rem 0rem">
+            Mis proyectos
+          </Title>
+        </FlexBox>
+      </div>
+      <Project />
+      <div
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
+        {' '}
+        <FlexBox>
+          <Text tag="xxxl" margin="3rem 0rem 1rem 0rem">
             Lenguajes, bibliotecas, librerías & herramientas...
           </Text>
         </FlexBox>

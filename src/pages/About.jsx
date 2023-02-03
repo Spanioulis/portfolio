@@ -5,7 +5,7 @@ import { IconDrive, LinkText, Text, Title } from '../components/atoms'
 import { colors, FlexBox } from '../styles'
 
 const FlexBoxStyle = styled(FlexBox)`
-  margin-top: 1.2rem;
+  margin-top: 0.5rem;
 `
 function About() {
   return (
@@ -93,7 +93,11 @@ function About() {
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
       >
-        <FlexBoxStyle direction="row" align="center">
+        <FlexBoxStyle
+          direction="row"
+          align="center"
+          margin="0rem 0rem 3rem 0rem"
+        >
           <IconDrive />
           <LinkText
             animationHover="animate__animated animate__headShake"
