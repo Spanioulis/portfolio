@@ -7,6 +7,9 @@ import { colors, dimensions, FlexBox } from '../styles'
 
 const IconContainer = styled.div`
   margin: 3.7rem 0rem 0rem 1.5rem;
+  @media (max-width: 768px) {
+    margin: 3.7rem 0rem 0rem 0.3rem;
+  }
 `
 const TitleStyle = styled(Title)`
   @media (max-width: 768px) {

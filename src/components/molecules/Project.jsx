@@ -128,7 +128,7 @@ function Project() {
       <FlexBoxStyle direction="row">
         <FlexBox>
           <Title tag="h6" color={colors.font.secondary} margin="0rem">
-            Budgets App
+            Budget App
           </Title>
           <Text tag="xxl" margin="0rem">
             Aplicación presupuestos

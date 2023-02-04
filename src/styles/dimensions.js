@@ -9,7 +9,7 @@ const dimensions = {
   font: {
     base: '16px',
     xl: '20px',
-    h1: '6.5rem',
+    h1: '7rem',
     h2: '5.85rem',
     h3: '4.56rem',
     h4: '4.37rem',

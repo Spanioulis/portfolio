@@ -15,7 +15,7 @@ const InputStyled = styled(Input)`
   transition: 0.8s;
 
   @media only screen and (max-width: 600px) {
-    font-size: ${dimensions.font.h3};
+    font-size: ${dimensions.font.h4};
   }
 
   @media only screen and (min-width: 600px) {

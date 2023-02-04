@@ -26,13 +26,13 @@ const TextContainer = styled.div`
     margin: 0rem 0rem 0rem 5rem;
   }
   @media only screen and (min-width: 768px) {
-    margin: 0rem 0rem 0rem 3rem;
+    margin: 0rem 0rem 0rem 8rem;
   }
   @media only screen and (min-width: 992px) {
-    margin: 5rem 0rem 0rem 3rem;
+    margin: 5rem 0rem 0rem 7.8rem;
   }
   @media only screen and (min-width: 1200px) {
-    margin: 5rem 0rem 0rem 11rem;
+    margin: 5rem 0rem 0rem 15rem;
   }
 `
 const ImageContainer = styled.div`
