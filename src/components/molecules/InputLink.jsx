@@ -8,20 +8,20 @@ const LinkStyled = styled(Link)`
   text-decoration: none;
 `
 const InputStyled = styled(Input)`
-  background-color: ${colors.main};
+  background-color: transparent;
   text-decoration: none;
   border: none;
 
   @media only screen and (max-width: 600px) {
-    font-size: ${dimensions.font.h4};
-  }
-
-  @media only screen and (min-width: 600px) {
     font-size: ${dimensions.font.h3};
   }
 
+  @media only screen and (min-width: 600px) {
+    font-size: ${dimensions.font.h2};
+  }
+
   @media only screen and (min-width: 768px) {
-    font-size: ${dimensions.font.h1};
+    font-size: ${dimensions.font.h2};
   }
 
   @media only screen and (min-width: 992px) {

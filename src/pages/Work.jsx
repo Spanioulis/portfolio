@@ -13,6 +13,9 @@ const TitleStyle = styled(Title)`
     font-size: ${dimensions.font.h6};
   }
 `
+const TextStyle = styled(Text)`
+  text-align: left;
+`
 function Work() {
   return (
     <Body>
@@ -118,11 +121,11 @@ function Work() {
         data-aos-duration="1000"
         data-aos="fade-right"
       >
-        <FlexBox>
-          <Text tag="xxxl" margin="3rem 0rem 1rem 0rem">
-            Lenguajes, bibliotecas, librerías & herramientas...
-          </Text>
-        </FlexBox>
+        {/* <FlexBox> */}
+        <TextStyle tag="xxxl" margin="3rem 0rem 1rem 0rem">
+          Lenguajes, bibliotecas, librerías & herramientas
+        </TextStyle>
+        {/* </FlexBox> */}
       </div>
       <div
         data-aos-anchor-placement="top-bottom"

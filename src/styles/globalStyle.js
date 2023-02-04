@@ -36,15 +36,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* Contenedor para las dos imágenes */
-.image-container {
-  margin-left: 41.5rem;
-  position: absolute;
-  width: 500px;
-  height: 100vh;
-}
 
 /* Imagen original */
-.image-container img {
+${
+  '' /* .image-container img {
   position: absolute;
   border-radius: 15px;
   width: 400px;
@@ -53,19 +48,23 @@ const GlobalStyle = createGlobalStyle`
   left: 0;
   -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
   mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
+} */
 }
 
 /* Copia de la imagen con bordes difuminados */
-.image-container img:nth-of-type(2) {
+${
+  '' /* .image-container img:nth-of-type(2) {
   position: absolute;
    width: 450px;
   height: auto;
   top: 0;
   left: 0;
   filter: blur(5px);
+} */
 }
 
- @media (max-width: 768px) {
+ ${
+   '' /* @media (max-width: 768px) {
   .image-container {
   margin: 1rem;
   position: relative;
@@ -76,6 +75,7 @@ const GlobalStyle = createGlobalStyle`
   top: 3rem;
   left: 1rem
 }
+ } */
  }
 `
 export default GlobalStyle

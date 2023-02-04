@@ -29,7 +29,7 @@ const BodyContainer = styled(FlexBox)`
   }
 
   @media only screen and (min-width: 1200px) {
-    margin: 0rem 20rem 5rem 20rem;
+    margin: 0rem 20rem 5rem 15rem;
   }
 `
 
