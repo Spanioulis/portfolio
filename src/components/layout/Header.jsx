@@ -11,6 +11,21 @@ const LinkStyled = styled(Link)`
 const TextStyled = styled(Text)`
   margin-top: 5.5rem;
   margin-right: 8rem;
+  @media only screen and (max-width: 600px) {
+    margin-right: 7.5rem;
+  }
+  @media only screen and (min-width: 600px) {
+    margin-right: 2rem;
+  }
+  @media only screen and (min-width: 768px) {
+    margin-right: 4rem;
+  }
+  @media only screen and (min-width: 992px) {
+    margin-right: 6rem;
+  }
+  @media only screen and (min-width: 1200px) {
+    margin-right: 8rem;
+  }
 `
 
 function Header({ children }) {

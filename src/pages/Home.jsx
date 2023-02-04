@@ -18,27 +18,21 @@ const TextContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   transition: font-size 1s ease;
-  :hover {
-    font-size: 1.2em;
-  }
 
   @media only screen and (max-width: 600px) {
-    margin: 2rem 0rem 0rem 3rem;
-    justify-content: flex-start;
+    margin: 0rem 0rem 0rem 2rem;
   }
   @media only screen and (min-width: 600px) {
-    margin: 2rem 0rem 0rem 5rem;
-    justify-content: flex-start;
+    margin: 0rem 0rem 0rem 5rem;
   }
   @media only screen and (min-width: 768px) {
     margin: 0rem 0rem 0rem 3rem;
-    justify-content: center;
   }
   @media only screen and (min-width: 992px) {
-    margin: 0rem 0rem 0rem 3rem;
+    margin: 5rem 0rem 0rem 3rem;
   }
   @media only screen and (min-width: 1200px) {
-    margin: 0rem 0rem 0rem 7rem;
+    margin: 5rem 0rem 0rem 11rem;
   }
 `
 const ImageContainer = styled.div`
