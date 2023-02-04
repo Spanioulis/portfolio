@@ -27,7 +27,6 @@ const TextStyled = styled(Text)`
     margin-right: 8rem;
   }
 `
-
 function Header({ children }) {
   const [headerIsHovering, headerOnHoverProps] = useHover()
 

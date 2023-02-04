@@ -40,7 +40,7 @@ const ImageContainer = styled.div`
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 5px 0px 5px 0px #000000 inset; */
   flex: 1;
   max-height: 500px;
   max-width: 400px;
