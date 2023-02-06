@@ -10,8 +10,8 @@ const LinkStyled = styled(Link)`
 `
 const InputStyled = styled(Input)`
   background-color: transparent;
-  border: none;
   text-decoration: none;
+  border: none;
   transition: 0.8s;
   width: fit-content;
 
@@ -38,23 +38,24 @@ const InputStyled = styled(Input)`
 const InputHoverStyled = styled(Input)`
   background-color: transparent;
   border: none;
-  padding: 1rem;
+  padding-left: 1rem;
   text-decoration: none;
   transition: 0.8s;
   width: fit-content;
 
   @media only screen and (max-width: 600px) {
     font-size: ${dimensions.font.h5};
-    padding: 0rem;
+    padding-left: 0rem;
   }
 
   @media only screen and (min-width: 600px) {
     font-size: ${dimensions.font.h3};
-    padding: 0rem;
+    padding-left: 0rem;
   }
 
   @media only screen and (min-width: 768px) {
     font-size: ${dimensions.font.h2};
+    padding-left: 1rem;
   }
 
   @media only screen and (min-width: 992px) {
@@ -97,12 +98,7 @@ function InputLink() {
     <>
       <LinkStyled to="/about" {...workOnHoverProps}>
         {workIsHovering || isHovering ? (
-          <InputHoverStyled
-            padding="1rem"
-            tag="h1"
-            type="button"
-            value="Sobre mí"
-          />
+          <InputHoverStyled tag="h1" type="button" value="Sobre mí" />
         ) : (
           <InputStyled
             color={colors.font.base}
@@ -116,7 +112,6 @@ function InputLink() {
         {aboutIsHovering || isHovering ? (
           <InputHoverStyled
             color={colors.font.main}
-            padding="1rem"
             tag="h1"
             type="button"
             value="Developer"
@@ -132,9 +127,8 @@ function InputLink() {
       </LinkStyled>
       <LinkStyled to="/contact" {...contactOnHoverProps}>
         {contactIsHovering || isHovering ? (
-          <InputHoverStyled
+          <InputStyled
             color={colors.font.main}
-            padding="1rem"
             tag="h1"
             type="button"
             value="Contacto"

@@ -6,7 +6,6 @@ const Input = styled.input`
   background-color: transparent;
   font-weight: ${({ fontWeight }) => fontWeight || '700'};
   font-size: ${({ fontSize, tag }) => fontSize || dimensions.font[`${tag}`]};
-  padding-left: ${({ padding }) => padding || '0rem'};
   margin-right: ${({ margin }) => margin || '0rem'};
   cursor: pointer;
 `
