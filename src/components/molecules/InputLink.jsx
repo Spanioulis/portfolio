@@ -127,7 +127,7 @@ function InputLink() {
       </LinkStyled>
       <LinkStyled to="/contact" {...contactOnHoverProps}>
         {contactIsHovering || isHovering ? (
-          <InputStyled
+          <InputHoverStyled
             color={colors.font.main}
             tag="h1"
             type="button"
