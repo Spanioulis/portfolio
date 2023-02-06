@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { colors, dimensions } from '../../styles'
+import { colors, dimensions, FlexBox } from '../../styles'
 import { Input } from '../atoms'
 import useHover from '../../hooks/useHover'
 
@@ -10,16 +10,17 @@ const LinkStyled = styled(Link)`
 `
 const InputStyled = styled(Input)`
   background-color: transparent;
-  text-decoration: none;
   border: none;
+  text-decoration: none;
   transition: 0.8s;
+  width: fit-content;
 
   @media only screen and (max-width: 600px) {
-    font-size: ${dimensions.font.h4};
+    font-size: ${dimensions.font.h5};
   }
 
   @media only screen and (min-width: 600px) {
-    font-size: ${dimensions.font.h2};
+    font-size: ${dimensions.font.h3};
   }
 
   @media only screen and (min-width: 768px) {
@@ -34,11 +35,41 @@ const InputStyled = styled(Input)`
     font-size: ${dimensions.font.h1};
   }
 `
+const InputHoverStyled = styled(Input)`
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  text-decoration: none;
+  transition: 0.8s;
+  width: fit-content;
 
+  @media only screen and (max-width: 600px) {
+    font-size: ${dimensions.font.h5};
+    padding: 0rem;
+  }
+
+  @media only screen and (min-width: 600px) {
+    font-size: ${dimensions.font.h3};
+    padding: 0rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    font-size: ${dimensions.font.h2};
+  }
+
+  @media only screen and (min-width: 992px) {
+    font-size: ${dimensions.font.h1};
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: ${dimensions.font.h1};
+  }
+`
 const Button = styled.button`
   border: none;
   color: white;
   background-color: transparent;
+  width: fit-content;
 
   @media only screen and (max-width: 600px) {
     margin-top: 4rem;
@@ -66,7 +97,12 @@ function InputLink() {
     <>
       <LinkStyled to="/about" {...workOnHoverProps}>
         {workIsHovering || isHovering ? (
-          <InputStyled padding="1rem" tag="h1" type="button" value="Sobre mí" />
+          <InputHoverStyled
+            padding="1rem"
+            tag="h1"
+            type="button"
+            value="Sobre mí"
+          />
         ) : (
           <InputStyled
             color={colors.font.base}
@@ -78,7 +114,7 @@ function InputLink() {
       </LinkStyled>
       <LinkStyled to="/work" {...aboutOnHoverProps}>
         {aboutIsHovering || isHovering ? (
-          <InputStyled
+          <InputHoverStyled
             color={colors.font.main}
             padding="1rem"
             tag="h1"
@@ -96,7 +132,7 @@ function InputLink() {
       </LinkStyled>
       <LinkStyled to="/contact" {...contactOnHoverProps}>
         {contactIsHovering || isHovering ? (
-          <InputStyled
+          <InputHoverStyled
             color={colors.font.main}
             padding="1rem"
             tag="h1"
@@ -112,13 +148,15 @@ function InputLink() {
           />
         )}
       </LinkStyled>
-      <Button
-        className="animate__animated animate__flipInX animate__infinite animate__slow"
-        type="button"
-        onClick={() => handleHover()}
-      >
-        Click aquí
-      </Button>
+      <FlexBox align="center">
+        <Button
+          className="animate__animated animate__flipInX animate__infinite animate__slow"
+          type="button"
+          onClick={() => handleHover()}
+        >
+          Click aquí
+        </Button>
+      </FlexBox>
     </>
   )
 }

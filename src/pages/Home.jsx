@@ -10,6 +10,8 @@ const HomeContainer = styled.div`
   @media only screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    justify: center;
+    min-width: fit-content;
   }
 `
 const TextContainer = styled.div`
@@ -20,7 +22,7 @@ const TextContainer = styled.div`
   transition: font-size 1s ease;
 
   @media only screen and (max-width: 600px) {
-    margin: 0rem 0rem 0rem 2rem;
+    margin: 0rem 0rem 0rem 1rem;
   }
   @media only screen and (min-width: 600px) {
     margin: 0rem 0rem 0rem 5rem;
@@ -85,6 +87,7 @@ const ImageContainer = styled.div`
     transparent
   );
 `
+
 function Home() {
   return (
     <>
