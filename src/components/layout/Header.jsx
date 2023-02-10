@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
@@ -11,6 +12,8 @@ const LinkStyled = styled(Link)`
 const TextStyled = styled(Text)`
   margin-top: 5.5rem;
   margin-right: 8rem;
+  font-weight: 700;
+
   @media only screen and (max-width: 600px) {
     margin-right: 1rem;
   }
@@ -29,22 +32,42 @@ const TextStyled = styled(Text)`
 `
 function Header({ children }) {
   const [headerIsHovering, headerOnHoverProps] = useHover()
+  const [scrollingUp, setScrollingUp] = useState(false)
+  const [lastScrollTop, setLastScrollTop] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = window.pageYOffset
+      setScrollingUp(currentScrollTop < lastScrollTop)
+      setLastScrollTop(currentScrollTop)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [lastScrollTop])
 
   return (
-    <LinkStyled to="/" {...headerOnHoverProps}>
-      {headerIsHovering ? (
-        <TextStyled
-          className="animate__animated animate__lightSpeedOutRight animate__infinite	animate__slow"
-          tag="xl"
-        >
-          {children}.home
-        </TextStyled>
-      ) : (
-        <TextStyled tag="xl" className="animate__animated animate__flipInX">
-          {children}
-        </TextStyled>
+    <>
+      {scrollingUp && (
+        <LinkStyled to="/" {...headerOnHoverProps}>
+          {headerIsHovering ? (
+            <TextStyled
+              className="animate__animated animate__lightSpeedOutRight animate__infinite	animate__slow"
+              tag="xl"
+            >
+              {children}.home
+            </TextStyled>
+          ) : (
+            <TextStyled tag="xl" className="animate__animated animate__flipInX">
+              {children}
+            </TextStyled>
+          )}
+        </LinkStyled>
       )}
-    </LinkStyled>
+    </>
   )
 }
 
