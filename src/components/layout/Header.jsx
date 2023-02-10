@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { useHover } from '../../hooks'
 import { Text } from '../atoms'
+import { colors } from '../../styles'
 
 const LinkStyled = styled(Link)`
   text-decoration: none;
@@ -13,6 +14,7 @@ const TextStyled = styled(Text)`
   margin-top: 5.5rem;
   margin-right: 8rem;
   font-weight: 700;
+  color: ${({ color }) => color};
 
   @media only screen and (max-width: 600px) {
     margin-right: 1rem;
@@ -32,41 +34,41 @@ const TextStyled = styled(Text)`
 `
 function Header({ children }) {
   const [headerIsHovering, headerOnHoverProps] = useHover()
-  const [scrollingUp, setScrollingUp] = useState(false)
-  const [lastScrollTop, setLastScrollTop] = useState(0)
+  const [isScrolling, setIsScrolling] = useState(false)
+  let lastScrollY = window.scrollY
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollTop = window.pageYOffset
-      setScrollingUp(currentScrollTop < lastScrollTop)
-      setLastScrollTop(currentScrollTop)
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      if (lastScrollY < window.scrollY) {
+        setIsScrolling(true)
+      } else {
+        setIsScrolling(false)
+      }
+      lastScrollY = window.scrollY
     }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [lastScrollTop])
+  })
 
   return (
     <>
-      {scrollingUp && (
-        <LinkStyled to="/" {...headerOnHoverProps}>
-          {headerIsHovering ? (
-            <TextStyled
-              className="animate__animated animate__lightSpeedOutRight animate__infinite	animate__slow"
-              tag="xl"
-            >
-              {children}.home
-            </TextStyled>
-          ) : (
-            <TextStyled tag="xl" className="animate__animated animate__flipInX">
-              {children}
-            </TextStyled>
-          )}
-        </LinkStyled>
-      )}
+      <LinkStyled to="/" {...headerOnHoverProps}>
+        {headerIsHovering ? (
+          <TextStyled
+            className="animate__animated animate__lightSpeedOutRight animate__infinite	animate__slow"
+            color={isScrolling ? 'transparent' : `${colors.font.base}`}
+            tag="xl"
+          >
+            {children}.home
+          </TextStyled>
+        ) : (
+          <TextStyled
+            tag="xl"
+            color={isScrolling ? 'transparent' : `${colors.font.base}`}
+            className="animate__animated animate__flipInX"
+          >
+            {children}
+          </TextStyled>
+        )}
+      </LinkStyled>
     </>
   )
 }

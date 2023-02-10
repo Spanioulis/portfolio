@@ -34,48 +34,5 @@ const GlobalStyle = createGlobalStyle`
         -webkit-box-shadow: inset 0 0 6px rgb(115, 115, 115, 0.8)
     }
   }
-
-  /* Contenedor para las dos imágenes */
-
-/* Imagen original */
-${
-  '' /* .image-container img {
-  position: absolute;
-  border-radius: 15px;
-  width: 400px;
-  height: auto;
-  top: 4rem;
-  left: 0;
-  -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
-  mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
-} */
-}
-
-/* Copia de la imagen con bordes difuminados */
-${
-  '' /* .image-container img:nth-of-type(2) {
-  position: absolute;
-   width: 450px;
-  height: auto;
-  top: 0;
-  left: 0;
-  filter: blur(5px);
-} */
-}
-
- ${
-   '' /* @media (max-width: 768px) {
-  .image-container {
-  margin: 1rem;
-  position: relative;
-  width: 300px;
-}
-.image-container img {
-  width: 250px;
-  top: 3rem;
-  left: 1rem
-}
- } */
- }
 `
 export default GlobalStyle
