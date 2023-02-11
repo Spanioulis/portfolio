@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 import { colors, FlexBox } from '../../styles'
-import { LinkText, Text, Title } from '../atoms'
-import link from '../../assets/icons/link.svg'
-import repo from '../../assets/icons/repo.svg'
+import { Button, LinkText, Text, Title } from '../atoms'
+import { link, repo, video } from '../../assets'
+import { useModal } from '../../hooks'
+import Modal from './Modal'
+import infoModal from '../../constants/infoModal'
 
 const LinkTextStyled = styled.a`
   margin: 0.1rem;
@@ -16,17 +18,29 @@ const FlexBoxStyle2 = styled(FlexBox)`
   gap: 0.5rem;
 `
 function Project() {
+  console.log('InfoModal', infoModal)
+  const [openModal1, closeModal1, isOpen1] = useModal(false)
+  const [openModal2, closeModal2, isOpen2] = useModal(false)
+  const [openModal3, closeModal3, isOpen3] = useModal(false)
+
   return (
     <>
       {/* Ed-Mundo! */}
+      {isOpen1 && <Modal closeModal={closeModal1}>Edmundo</Modal>}
       <FlexBoxStyle direction="row">
         <FlexBox>
           <Title tag="h6" color={colors.font.secondary} margin="0rem">
             Ed Mundo!
           </Title>
-          <Text tag="xxl" margin="0rem">
-            App book released
-          </Text>
+          <FlexBox direction="row">
+            <Button onClick={openModal1}>
+              {' '}
+              <img src={video} alt="Video logo" width="26px" />
+            </Button>
+            <Text tag="xxl" margin="0rem">
+              App book released
+            </Text>
+          </FlexBox>
         </FlexBox>
         <FlexBoxStyle2 justify="center">
           <FlexBox direction="row" align="center">
@@ -72,14 +86,21 @@ function Project() {
         </FlexBoxStyle2>
       </FlexBoxStyle>
       {/* SWAPI */}
+      {isOpen2 && <Modal closeModal={closeModal2}>SWAPI</Modal>}
       <FlexBoxStyle direction="row">
         <FlexBox>
           <Title tag="h6" color={colors.font.secondary} margin="0rem">
             SWAPI
           </Title>
-          <Text tag="xxl" margin="0rem">
-            Star Wars API
-          </Text>
+          <FlexBox direction="row">
+            <Button onClick={openModal2}>
+              {' '}
+              <img src={video} alt="Video logo" width="26px" />
+            </Button>
+            <Text tag="xxl" margin="0rem">
+              Star Wars API
+            </Text>
+          </FlexBox>
         </FlexBox>
         <FlexBoxStyle2 justify="center">
           <FlexBox direction="row" align="center">
@@ -125,14 +146,21 @@ function Project() {
         </FlexBoxStyle2>
       </FlexBoxStyle>
       {/* Budget App */}
+      {isOpen3 && <Modal closeModal={closeModal3}>Budgets</Modal>}
       <FlexBoxStyle direction="row">
         <FlexBox>
           <Title tag="h6" color={colors.font.secondary} margin="0rem">
             Budget App
           </Title>
-          <Text tag="xxl" margin="0rem">
-            Aplicación presupuestos
-          </Text>
+          <FlexBox direction="row">
+            <Button onClick={openModal3}>
+              {' '}
+              <img src={video} alt="Video logo" width="26px" />
+            </Button>
+            <Text tag="xxl" margin="0rem">
+              App presupuestos
+            </Text>
+          </FlexBox>
         </FlexBox>
         <FlexBoxStyle2 justify="center">
           <FlexBox direction="row" align="center">
