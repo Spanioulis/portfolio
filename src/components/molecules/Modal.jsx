@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { close } from '../../assets'
 
 const SectionStyled = styled.section`
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.9);
   bottom: 0;
   left: 0;
   min-height: 100vh;

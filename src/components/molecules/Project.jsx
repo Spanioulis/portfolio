@@ -18,7 +18,6 @@ const FlexBoxStyle2 = styled(FlexBox)`
   gap: 0.5rem;
 `
 function Project() {
-  console.log('InfoModal', infoModal)
   const [openModal1, closeModal1, isOpen1] = useModal(false)
   const [openModal2, closeModal2, isOpen2] = useModal(false)
   const [openModal3, closeModal3, isOpen3] = useModal(false)
@@ -26,7 +25,15 @@ function Project() {
   return (
     <>
       {/* Ed-Mundo! */}
-      {isOpen1 && <Modal closeModal={closeModal1}>Edmundo</Modal>}
+      {isOpen1 &&
+        infoModal
+          .filter((item) => item.id === 'edmundo')
+          .map((item) => (
+            <Modal closeModal={closeModal1}>
+              <Text>{item.text}</Text>
+              <img src={item.img} alt={item.id} />
+            </Modal>
+          ))}
       <FlexBoxStyle direction="row">
         <FlexBox>
           <Title tag="h6" color={colors.font.secondary} margin="0rem">
@@ -86,7 +93,15 @@ function Project() {
         </FlexBoxStyle2>
       </FlexBoxStyle>
       {/* SWAPI */}
-      {isOpen2 && <Modal closeModal={closeModal2}>SWAPI</Modal>}
+      {isOpen2 &&
+        infoModal
+          .filter((item) => item.id === 'swapi')
+          .map((item) => (
+            <Modal closeModal={closeModal2}>
+              <Text>{item.text}</Text>
+              <img src={item.img} alt={item.id} />
+            </Modal>
+          ))}
       <FlexBoxStyle direction="row">
         <FlexBox>
           <Title tag="h6" color={colors.font.secondary} margin="0rem">
@@ -146,7 +161,15 @@ function Project() {
         </FlexBoxStyle2>
       </FlexBoxStyle>
       {/* Budget App */}
-      {isOpen3 && <Modal closeModal={closeModal3}>Budgets</Modal>}
+      {isOpen3 &&
+        infoModal
+          .filter((item) => item.id === 'budget')
+          .map((item) => (
+            <Modal closeModal={closeModal3}>
+              <Text>{item.text}</Text>
+              <img src={item.img} alt={item.id} />
+            </Modal>
+          ))}
       <FlexBoxStyle direction="row">
         <FlexBox>
           <Title tag="h6" color={colors.font.secondary} margin="0rem">

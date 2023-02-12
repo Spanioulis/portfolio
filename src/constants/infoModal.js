@@ -1,9 +1,21 @@
 export default [
   {
     id: 'edmundo',
-    text: 'Mi primer proyecto (proyecto final). Intercambio de libros',
-    img: '',
+    text: `
+    Ed Mundo es una aplicación para compartir libros mano a mano. Puedes "liberar" aquellos libros que ya has leído, buscar todos los libros disponibles o por los distritos que más te interesen (cerca de tu casa o de tu trabajo), y contactar con los usuarios a través del chat implementado en la app. Revisa tu carrusel de libros en tu perfil.
+
+    Libros de proximidad, para un intercambio sostenible con el medio ambiente. Este es mi primer proyecto como desarrollador frontend. He intentando hacer una app responsive, agradable y funcional para el usuario final.
+    `,
+    img: 'https://user-images.githubusercontent.com/97700906/218307770-3ceeeaa7-c103-4b23-b0ed-c7729c4a9daa.gif',
   },
-  { id: 'swapi', text: 'Ejercicio de la Bootcamp...', img: '' },
-  { id: 'budgets', text: 'Ejercicio de la Bootcamp...', img: '' },
+  {
+    id: 'swapi',
+    text: `SWAPI es un sprint del itinerario ReactJS Bootcamp de IT Academy. El objetivo de este ejercicio era aprender a consumir datos de una API - Star Wars - en React y comprender qué son las pruebas unitarias y cómo implementarlas. En cuanto a objetivos específicos: uso de Axios con useEffect, maquetación con styled-components, ejecución pruebas con Jest y usar react-testing-libray.`,
+    img: 'https://user-images.githubusercontent.com/97700906/218308042-1e6cab80-d54c-4595-8edd-3d3d36017941.gif',
+  },
+  {
+    id: 'budget',
+    text: `Budgets App es un sprint del itinerario ReactJS Bootcamp de IT Academy. El objetivo de este ejercicio era aprender sobre componentes de React, comprender y saber programar con JSX, conocer 'hooks' básicos (useRef y useState), saber implementar renderizado condicional y diseñar con styled-components.`,
+    img: 'https://user-images.githubusercontent.com/97700906/216831863-9c45ef0e-94a4-44a6-9aa6-5707794e91c6.gif',
+  },
 ]
