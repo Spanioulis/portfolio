@@ -36,20 +36,14 @@ const ButtonStyled = styled.button`
   top: 25px;
   right: 25px;
 `
-function Modal({ children, closeModal }) {
+function Modal({ children, closeModal, id }) {
   return (
-    <SectionStyled>
+    <SectionStyled key={id}>
       <ModalContainer>
         <ButtonStyled onClick={closeModal}>
           <img src={close} alt="Close logo" />
         </ButtonStyled>
         {children}
-        {/* <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed
-          totam necessitatibus similique vero sit eligendi incidunt eveniet
-          facere beatae?
-        </Text>
-        <img src={img} alt={title} /> */}
       </ModalContainer>
     </SectionStyled>
   )
@@ -58,6 +52,7 @@ function Modal({ children, closeModal }) {
 Modal.propTypes = {
   children: PropTypes.node.isRequired,
   closeModal: PropTypes.func,
+  id: PropTypes.string,
 }
 
 export default Modal

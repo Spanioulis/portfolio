@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { colors, FlexBox } from '../../styles'
 import { Button, LinkText, Text, Title } from '../atoms'
 import { link, repo, video } from '../../assets'
-import { useModal } from '../../hooks'
+import { useModal, useWidth } from '../../hooks'
 import Modal from './Modal'
 import infoModal from '../../constants/infoModal'
 
@@ -18,6 +18,7 @@ const FlexBoxStyle2 = styled(FlexBox)`
   gap: 0.5rem;
 `
 function Project() {
+  const { width } = useWidth(0)
   const [openModal1, closeModal1, isOpen1] = useModal(false)
   const [openModal2, closeModal2, isOpen2] = useModal(false)
   const [openModal3, closeModal3, isOpen3] = useModal(false)
@@ -29,8 +30,9 @@ function Project() {
         infoModal
           .filter((item) => item.id === 'edmundo')
           .map((item) => (
-            <Modal closeModal={closeModal1}>
+            <Modal closeModal={closeModal1} key={item.id}>
               <Text>{item.text}</Text>
+              {/* {width >= 992 && <img src={item.img} alt={item.id} />} */}
               <img src={item.img} alt={item.id} />
             </Modal>
           ))}
@@ -42,7 +44,9 @@ function Project() {
           <FlexBox direction="row">
             <Button onClick={openModal1}>
               {' '}
-              <img src={video} alt="Video logo" width="26px" />
+              {width >= 850 && (
+                <img src={video} alt="Video logo" width="26px" />
+              )}
             </Button>
             <Text tag="xxl" margin="0rem">
               App book released
@@ -97,7 +101,7 @@ function Project() {
         infoModal
           .filter((item) => item.id === 'swapi')
           .map((item) => (
-            <Modal closeModal={closeModal2}>
+            <Modal closeModal={closeModal2} key={item.id}>
               <Text>{item.text}</Text>
               <img src={item.img} alt={item.id} />
             </Modal>
@@ -109,8 +113,9 @@ function Project() {
           </Title>
           <FlexBox direction="row">
             <Button onClick={openModal2}>
-              {' '}
-              <img src={video} alt="Video logo" width="26px" />
+              {width >= 850 && (
+                <img src={video} alt="Video logo" width="26px" />
+              )}
             </Button>
             <Text tag="xxl" margin="0rem">
               Star Wars API
@@ -165,7 +170,7 @@ function Project() {
         infoModal
           .filter((item) => item.id === 'budget')
           .map((item) => (
-            <Modal closeModal={closeModal3}>
+            <Modal closeModal={closeModal3} key={item.id}>
               <Text>{item.text}</Text>
               <img src={item.img} alt={item.id} />
             </Modal>
@@ -177,8 +182,9 @@ function Project() {
           </Title>
           <FlexBox direction="row">
             <Button onClick={openModal3}>
-              {' '}
-              <img src={video} alt="Video logo" width="26px" />
+              {width >= 850 && (
+                <img src={video} alt="Video logo" width="26px" />
+              )}
             </Button>
             <Text tag="xxl" margin="0rem">
               App presupuestos
