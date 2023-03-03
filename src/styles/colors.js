@@ -1,5 +1,6 @@
 const colors = {
   main: '#000000',
+  background: '#000000',
   secondary: '#0088CC',
   tertiary: '#DC2A4A',
   font: {

@@ -96,15 +96,61 @@ function Work() {
           tag="xl"
         >
           En diciembre de 2022 obtuve el certificado de desarrollador Front-end
-          en ReactJS, y actualmente estoy acabando un curso de React JS
-          Avanzado, impartido por la misma IT Academy, donde estamos
-          profundizando en la generación de un código más limpio, reutilizable,
-          seguro y capaz de generar aplicaciones con mayor performance; creando
-          proyectos estructurados con metodología de diseño <i>Atomic Design</i>{' '}
-          (atoms, molecules, organisms), usando Redux & Redux Toolkit,
-          useContext y useReducer combinados, layouts con Styled Components,
-          añadir reglas ESLint, implementación PropTypes, etc. con entornos de
-          desarrollo como VSC y CodeSandbox.
+          en ReactJS, y posteriormente realicé un Upskilling de React JS
+          Avanzado, impartido por la misma IT Academy, donde profundizamos en la
+          generación de un código más limpio, reutilizable, seguro y capaz de
+          generar aplicaciones con mayor performance; creando proyectos
+          estructurados con metodología de diseño <i>Atomic Design</i> (atoms,
+          molecules, organisms), usando Redux & Redux Toolkit, useContext y
+          useReducer combinados, layouts con Styled Components, añadiendo reglas
+          ESLint, implementación PropTypes, etc. con entornos de desarrollo como
+          VSC y CodeSandbox.
+        </Text>
+      </div>
+      <div
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+        data-aos="fade-right"
+      >
+        <Text
+          className="animate__animated animate__fadeInLeft"
+          color={colors.font.base}
+          tag="xl"
+        >
+          He formado parte de un equipo para el desarrollo de una App (demo) en
+          React JS, cuya duración fue un sprint 2 semanas intensivas de
+          dedicación completa
+          <LinkText
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://github.com/vicenlu/ita-game"
+            color={colors.tertiary}
+          >
+            -ITA Game-{' '}
+          </LinkText>
+          . Actualmente estoy trabajando en este proyecto
+          <LinkText
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://github.com/Spanioulis/lab-app"
+            color={colors.secondary}
+          >
+            -Lab App-{' '}
+          </LinkText>{' '}
+          para un Hospital (reserva de laboratorios y material), y colaborando
+          activamente en este proyecto fullstack
+          <LinkText
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://github.com/IT-Academy-BCN/ita-directory"
+            color={colors.tertiary}
+          >
+            -ITA Directory-{' '}
+          </LinkText>
+          desarrollado con ReactJS + NodeJS (CI/CD), cuyas funciones son
+          realizar Issues (o crearlas), migrar de JavaScript a TypeScript,
+          estilizar (Styled Components) o acabar de perfilar componentes,
+          trabajar con Git, Pull Requests y revisión de código en GitHub.
         </Text>
       </div>
       <div

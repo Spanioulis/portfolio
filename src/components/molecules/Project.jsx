@@ -22,6 +22,7 @@ function Project() {
   const [openModal1, closeModal1, isOpen1] = useModal(false)
   const [openModal2, closeModal2, isOpen2] = useModal(false)
   const [openModal3, closeModal3, isOpen3] = useModal(false)
+  const [openModal4, closeModal4, isOpen4] = useModal(false)
 
   return (
     <>
@@ -88,6 +89,71 @@ function Project() {
               color={colors.font.main}
               fontWeight="500"
               href="https://github.com/Spanioulis/app-book-released"
+              margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
+            >
+              Repositorio
+            </LinkText>
+          </FlexBox>
+        </FlexBoxStyle2>
+      </FlexBoxStyle>
+      {/* HANGMAN */}
+      {isOpen4 &&
+        infoModal
+          .filter((item) => item.id === 'hangman')
+          .map((item) => (
+            <Modal closeModal={closeModal4} key={item.id}>
+              <Text>{item.text}</Text>
+              <img src={item.img} alt={item.id} />
+            </Modal>
+          ))}
+      <FlexBoxStyle direction="row">
+        <FlexBox>
+          <Title tag="h6" color={colors.font.secondary} margin="0rem">
+            Hangman Game
+          </Title>
+          <FlexBox direction="row">
+            <Button onClick={openModal4}>
+              {width >= 850 && (
+                <img src={video} alt="Video logo" width="26px" />
+              )}
+            </Button>
+            <Text tag="xxl" margin="0rem">
+              Typescript App
+            </Text>
+          </FlexBox>
+        </FlexBox>
+        <FlexBoxStyle2 justify="center">
+          <FlexBox direction="row" align="center">
+            <LinkTextStyled href="" rel="noopener noreferrer" target="_blank">
+              {' '}
+              <img src={link} alt="Link logo" width="26px" />
+            </LinkTextStyled>
+            <LinkText
+              animationHover="animate__animated animate__headShake"
+              color={colors.font.main}
+              fontWeight="500"
+              href="https://hangman-game-1ce0a.web.app/"
+              margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
+            >
+              Ver demo
+            </LinkText>
+          </FlexBox>
+          <FlexBox direction="row" align="center">
+            <LinkTextStyled
+              href="https://github.com/Spanioulis/hangman-game"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {' '}
+              <img src={repo} alt="Repo logo" width="26px" />
+            </LinkTextStyled>
+            <LinkText
+              animationHover="animate__animated animate__headShake"
+              color={colors.font.main}
+              fontWeight="500"
+              href="https://github.com/Spanioulis/hangman-game"
               margin="0rem 0rem 0rem 0.3rem"
               tag="xl"
             >

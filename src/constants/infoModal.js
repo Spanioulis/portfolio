@@ -18,4 +18,9 @@ export default [
     text: `Budgets App es un sprint del itinerario ReactJS Bootcamp de IT Academy. El objetivo de este ejercicio era aprender sobre componentes de React, comprender y saber programar con JSX, conocer 'hooks' básicos (useRef y useState), saber implementar renderizado condicional y diseñar con styled-components.`,
     img: 'https://user-images.githubusercontent.com/97700906/216831863-9c45ef0e-94a4-44a6-9aa6-5707794e91c6.gif',
   },
+  {
+    id: 'hangman',
+    text: `Hangman Game (Juego del ahorcado) es un proyecto realizado con React & Typescript. El objetivo del mismo era seguir mejorando en React y empezar a adentrarme en Typescript. He usado styled-components para estilos. El proyecto se ha creado en Vite, y el deploy en Firebase Hosting.`,
+    img: 'https://user-images.githubusercontent.com/97700906/222248468-61ae9af0-95f1-46b0-8c3c-d5489ad62e78.gif',
+  },
 ]

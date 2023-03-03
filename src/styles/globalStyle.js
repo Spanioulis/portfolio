@@ -3,7 +3,7 @@ import colors from './colors'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: ${colors.main};
+    background-color: ${colors.background};
     font-family: 'Inter', sans-serif;
     ${'' /* font-family: 'Roboto', sans-serif; */}
     margin: 0;
