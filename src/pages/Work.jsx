@@ -47,9 +47,8 @@ function Work() {
         color={colors.font.base}
         tag="xl"
       >
-        Hace un año aproximadamente, empecé en el Bootcamp de IT Academy
-        (Cibernàrium - Barcelona Activa), donde he adquirido múltiples
-        capacidades y habilidades.
+        Hace más de un año empecé en el Bootcamp de IT Academy (Cibernàrium -
+        Barcelona Activa), donde adquirí múltiples capacidades y habilidades.
       </Text>
       <Text
         className="animate__animated animate__fadeInLeft"
@@ -117,9 +116,8 @@ function Work() {
           color={colors.font.base}
           tag="xl"
         >
-          He formado parte de un equipo para el desarrollo de una App (demo) en
-          React JS, cuya duración fue un sprint 2 semanas intensivas de
-          dedicación completa
+          A nivel de experiencia, he formado parte de un equipo para el
+          desarrollo de una App (demo) en React JS
           <LinkText
             target="_blank"
             rel="noreferrer noopener"
@@ -128,17 +126,7 @@ function Work() {
           >
             -ITA Game-{' '}
           </LinkText>
-          . Actualmente estoy trabajando en este proyecto
-          <LinkText
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://github.com/Spanioulis/lab-app"
-            color={colors.secondary}
-          >
-            -Lab App-{' '}
-          </LinkText>{' '}
-          para un Hospital (reserva de laboratorios y material), y colaborando
-          activamente en este proyecto fullstack
+          , y de este proyecto desarrollado en ReactJS + NodeJS (CI/CD),
           <LinkText
             target="_blank"
             rel="noreferrer noopener"
@@ -147,10 +135,38 @@ function Work() {
           >
             -ITA Directory-{' '}
           </LinkText>
-          desarrollado con ReactJS + NodeJS (CI/CD), cuyas funciones son
-          realizar Issues (o crearlas), migrar de JavaScript a TypeScript,
-          estilizar (Styled Components) o acabar de perfilar componentes,
-          trabajar con Git, Pull Requests y revisión de código en GitHub.
+          , donde realicé Issues (+ creación según necesidades), migrar de
+          JavaScript a TypeScript, estilizar (Styled Components) o acabar de
+          perfilar componentes, trabajar con Git, Pull Requests y revisión de
+          código en GitHub, así como crear e implementar tests (Jest & React
+          Testing Library).{' '}
+          <span style={{ color: colors.font.actually }}>Actualmente</span> estoy
+          trabajando en este proyecto
+          <LinkText
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://github.com/Spanioulis/lab-app"
+            color={colors.secondary}
+          >
+            -Lab App-{' '}
+          </LinkText>{' '}
+          para un Hospital (reserva de laboratorios y material), y diariamente
+          en este proyecto fullstack
+          <LinkText
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://github.com/IT-Academy-BCN/ita-wiki"
+            color={colors.secondary}
+          >
+            -ITA Wiki-{' '}
+          </LinkText>
+          , desarrollado en ReactJS (Typescript - Atomic design) + NodeJS, con
+          metodología ágiles y de integración y distribución continua (CI/CD),
+          cuyas funciones son la realización de Issues (y creación de nuevas
+          según necesidades del proyecto), testing (Jest & React Testing Library
+          & Vitest), Pull Requests, dailys, y coordinación & comunicación entre
+          front y back, cuidando siempre todos los detalles para un buen
+          resultado final del proyecto.
         </Text>
       </div>
       <div

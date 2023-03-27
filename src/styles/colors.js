@@ -8,6 +8,7 @@ const colors = {
     main: '#4672FE',
     secondary: '#444',
     tertiary: '#DC2A4A',
+    actually: '#4CBB17',
   },
 }
 

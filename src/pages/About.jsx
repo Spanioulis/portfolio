@@ -43,10 +43,10 @@ function About() {
         tag="xl"
       >
         ¡Hola, soy Sergio! Desarrollador front-end en ciernes, con un afán por
-        mejorar y aprender continuamente. Hace unos meses, decidí dar un giro a
-        mi carrera profesional buscando nuevas metas y motivaciones. A día de
-        hoy, me siento realizado y puedo decir que estoy muy agradecido por
-        haber tomado esta decisión. Sin duda, estoy seguro que esta será una
+        mejorar y aprender continuamente. Hace un par de años, decidí dar un
+        giro a mi carrera profesional buscando nuevas metas y motivaciones. A
+        día de hoy, me siento realizado y puedo decir que estoy muy agradecido
+        por haber tomado esta decisión. Sin duda, estoy seguro que esta será una
         experiencia enriquecedora y satisfactoria.
       </Text>
       <div
