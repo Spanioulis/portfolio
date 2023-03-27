@@ -95,8 +95,8 @@ function Work() {
           tag="xl"
         >
           En diciembre de 2022 obtuve el certificado de desarrollador Front-end
-          en ReactJS, y posteriormente realicé un Upskilling de React JS
-          Avanzado, impartido por la misma IT Academy, donde profundizamos en la
+          en ReactJS, y posteriormente realicé un Upskilling de React Avanzado,
+          impartido por la misma IT Academy, donde profundizamos en la
           generación de un código más limpio, reutilizable, seguro y capaz de
           generar aplicaciones con mayor performance; creando proyectos
           estructurados con metodología de diseño <i>Atomic Design</i> (atoms,
@@ -117,7 +117,7 @@ function Work() {
           tag="xl"
         >
           A nivel de experiencia, he formado parte de un equipo para el
-          desarrollo de una App (demo) en React JS
+          desarrollo de una App (demo) en React
           <LinkText
             target="_blank"
             rel="noreferrer noopener"
@@ -136,7 +136,7 @@ function Work() {
             -ITA Directory-{' '}
           </LinkText>
           , donde realicé Issues (+ creación según necesidades), migrar de
-          JavaScript a TypeScript, estilizar (Styled Components) o acabar de
+          JavaScript a TypeScript, maquetar (Styled Components) o acabar de
           perfilar componentes, trabajar con Git, Pull Requests y revisión de
           código en GitHub, así como crear e implementar tests (Jest & React
           Testing Library).{' '}

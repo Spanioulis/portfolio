@@ -6,6 +6,8 @@ const ButtonStyled = styled.button`
   padding: 0rem 0.2rem 0rem 0rem;
   cursor: pointer;
   width: fit-content;
+  background-color: transparent;
+  border: none;
 `
 export default function Button({
   children,
