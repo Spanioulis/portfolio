@@ -42,28 +42,97 @@ function Work() {
           </LinkText>
         </IconContainer>
       </FlexBox>
+
+      {/* Experiencia */}
       <Text
         className="animate__animated animate__fadeInLeft"
         color={colors.font.base}
         tag="xl"
       >
-        Hace más de un año empecé en el Bootcamp de IT Academy (Cibernàrium -
-        Barcelona Activa), donde adquirí múltiples capacidades y habilidades.
+        A nivel de <i>experiencia</i>, actualmente estoy trabajando en este
+        proyecto fullstack
+        <LinkText
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://github.com/IT-Academy-BCN/ita-wiki"
+          color={colors.secondary}
+        >
+          -ITA Wiki-
+        </LinkText>
+        , desarrollado en ReactJS (Typescript - Atomic design) + NodeJS, con
+        metodología ágiles y de integración y distribución continua (CI/CD),
+        cuyas funciones son la realización de Issues (y creación de nuevas según
+        necesidades del proyecto), testing (Jest & React Testing Library &
+        Vitest), Pull Requests, dailys, y coordinación & comunicación entre
+        front y back, cuidando siempre todos los detalles para un buen resultado
+        final del proyecto.
       </Text>
-      <Text
-        className="animate__animated animate__fadeInLeft"
-        color={colors.font.base}
-        tag="xl"
+      <div
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+        data-aos="fade-right"
       >
-        {' '}
-        Hice una primera etapa de Fundamentos de la Programación con Vanilla
-        JavaScript, donde se incidió mucho en la lógica de la programación. En
-        la segunda etapa, en el Itinerario de React JS, profundicé en
-        maquetación (HTML5, CSS3, Bootstrap, Tailwind, Styled Components),
-        reforcé los conocimientos de JavaScript intentando reducir el código y
-        hacerlo más legible (con ECMAScript 6), y realicé un sprint con
-        TypeScript consumiendo datos de una API Rest.
-      </Text>
+        <Text
+          className="animate__animated animate__fadeInLeft"
+          color={colors.font.base}
+          tag="xl"
+        >
+          También he formado parte de un equipo para el desarrollo de una App
+          (demo) en ReactJS
+          <LinkText
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://github.com/vicenlu/ita-game"
+            color={colors.tertiary}
+          >
+            -ITA Game-
+          </LinkText>
+          , y de este proyecto desarrollado en ReactJS + NodeJS (CI/CD),
+          <LinkText
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://github.com/IT-Academy-BCN/ita-directory"
+            color={colors.tertiary}
+          >
+            -ITA Directory-
+          </LinkText>
+          , donde realicé Issues (+ creación según necesidades), migrar de
+          JavaScript a TypeScript, maquetar (Styled Components) o acabar de
+          perfilar componentes ya existentes, trabajar con Git, Pull Requests y
+          revisión de código en GitHub, así como crear e implementar tests (Jest
+          & React Testing Library). Así como de este proyecto (demo)
+          <LinkText
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://github.com/Spanioulis/lab-app"
+            color={colors.secondary}
+          >
+            -Lab App-{' '}
+          </LinkText>{' '}
+          para un Hospital (reserva de laboratorios y material).
+        </Text>
+      </div>
+
+      {/* Formación */}
+      <div
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+        data-aos="fade-right"
+      >
+        <Text color={colors.font.base} tag="xl">
+          {' '}
+          A nivel de <i>formación</i>, hace más de un año empecé en el Bootcamp
+          de IT Academy (Cibernàrium - Barcelona Activa), donde adquirí
+          múltiples capacidades y habilidades. Hice una primera etapa de
+          Fundamentos de la Programación con Vanilla JavaScript, donde se
+          incidió mucho en la lógica de la programación. En la segunda etapa, en
+          el Itinerario de React JS, profundicé en maquetación (HTML5, CSS3,
+          Bootstrap, Tailwind, Styled Components), reforcé los conocimientos de
+          JavaScript intentando reducir el código y hacerlo más legible (con
+          ECMAScript 6), y realicé un sprint con TypeScript consumiendo datos de
+          una API Rest.
+        </Text>
+      </div>
       <div
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
@@ -111,69 +180,6 @@ function Work() {
         data-aos-duration="1000"
         data-aos="fade-right"
       >
-        <Text
-          className="animate__animated animate__fadeInLeft"
-          color={colors.font.base}
-          tag="xl"
-        >
-          A nivel de experiencia, he formado parte de un equipo para el
-          desarrollo de una App (demo) en React
-          <LinkText
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://github.com/vicenlu/ita-game"
-            color={colors.tertiary}
-          >
-            -ITA Game-{' '}
-          </LinkText>
-          , y de este proyecto desarrollado en ReactJS + NodeJS (CI/CD),
-          <LinkText
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://github.com/IT-Academy-BCN/ita-directory"
-            color={colors.tertiary}
-          >
-            -ITA Directory-{' '}
-          </LinkText>
-          , donde realicé Issues (+ creación según necesidades), migrar de
-          JavaScript a TypeScript, maquetar (Styled Components) o acabar de
-          perfilar componentes, trabajar con Git, Pull Requests y revisión de
-          código en GitHub, así como crear e implementar tests (Jest & React
-          Testing Library).{' '}
-          <span style={{ color: colors.font.actually }}>Actualmente</span> estoy
-          trabajando en este proyecto
-          <LinkText
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://github.com/Spanioulis/lab-app"
-            color={colors.secondary}
-          >
-            -Lab App-{' '}
-          </LinkText>{' '}
-          para un Hospital (reserva de laboratorios y material), y diariamente
-          en este proyecto fullstack
-          <LinkText
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://github.com/IT-Academy-BCN/ita-wiki"
-            color={colors.secondary}
-          >
-            -ITA Wiki-{' '}
-          </LinkText>
-          , desarrollado en ReactJS (Typescript - Atomic design) + NodeJS, con
-          metodología ágiles y de integración y distribución continua (CI/CD),
-          cuyas funciones son la realización de Issues (y creación de nuevas
-          según necesidades del proyecto), testing (Jest & React Testing Library
-          & Vitest), Pull Requests, dailys, y coordinación & comunicación entre
-          front y back, cuidando siempre todos los detalles para un buen
-          resultado final del proyecto.
-        </Text>
-      </div>
-      <div
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="1000"
-        data-aos="fade-right"
-      >
         <FlexBox>
           <Title tag="h5" margin="2rem 0rem 0.2rem 0rem">
             Mis proyectos
@@ -186,11 +192,9 @@ function Work() {
         data-aos-duration="1000"
         data-aos="fade-right"
       >
-        {/* <FlexBox> */}
         <TextStyle tag="xxxl" margin="3rem 0rem 1rem 0rem">
           Lenguajes, bibliotecas, librerías & herramientas
         </TextStyle>
-        {/* </FlexBox> */}
       </div>
       <div
         data-aos-anchor-placement="top-bottom"
