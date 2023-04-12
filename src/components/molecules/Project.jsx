@@ -23,6 +23,7 @@ function Project() {
   const [openModal2, closeModal2, isOpen2] = useModal(false)
   const [openModal3, closeModal3, isOpen3] = useModal(false)
   const [openModal4, closeModal4, isOpen4] = useModal(false)
+  const [openModal5, closeModal5, isOpen5] = useModal(false)
 
   return (
     <>
@@ -89,6 +90,67 @@ function Project() {
               color={colors.font.main}
               fontWeight="500"
               href="https://github.com/Spanioulis/app-book-released"
+              margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
+            >
+              Repositorio
+            </LinkText>
+          </FlexBox>
+        </FlexBoxStyle2>
+      </FlexBoxStyle>
+      {/* RECIPE & FOODS */}
+      {isOpen5 &&
+        infoModal
+          .filter((item) => item.id === 'spoonacular')
+          .map((item) => (
+            <Modal closeModal={closeModal5} key={item.id}>
+              <Text>{item.text}</Text>
+              <img src={item.img} alt={item.id} />
+            </Modal>
+          ))}
+      <FlexBoxStyle direction="row">
+        <FlexBox>
+          <Title tag="h6" color={colors.font.secondary} margin="0rem">
+            Recipe & Food
+          </Title>
+          <FlexBox direction="row">
+            <Button onClick={openModal5}>
+              {width >= 850 && (
+                <img src={video} alt="Video logo" width="26px" />
+              )}
+            </Button>
+            <Text tag="xxl" margin="0rem">
+              Spoonacular API
+            </Text>
+          </FlexBox>
+        </FlexBox>
+        <FlexBoxStyle2 justify="center">
+          <FlexBox direction="row" align="center">
+            <LinkTextStyled href="" rel="noopener noreferrer" target="_blank">
+              {' '}
+              <img src={link} alt="Link logo" width="26px" />
+            </LinkTextStyled>
+            <LinkText
+              animationHover="animate__animated animate__headShake"
+              color={colors.font.main}
+              fontWeight="500"
+              href="https://recipe-food-spoonacular.netlify.app/"
+              margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
+            >
+              Ver demo
+            </LinkText>
+          </FlexBox>
+          <FlexBox direction="row" align="center">
+            <LinkTextStyled href="" rel="noopener noreferrer" target="_blank">
+              {' '}
+              <img src={repo} alt="Repo logo" width="26px" />
+            </LinkTextStyled>
+            <LinkText
+              animationHover="animate__animated animate__headShake"
+              color={colors.font.main}
+              fontWeight="500"
+              href="https://github.com/Spanioulis/recipe-food-api"
               margin="0rem 0rem 0rem 0.3rem"
               tag="xl"
             >

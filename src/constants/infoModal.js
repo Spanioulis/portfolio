@@ -19,6 +19,11 @@ export default [
     img: 'https://user-images.githubusercontent.com/97700906/216831863-9c45ef0e-94a4-44a6-9aa6-5707794e91c6.gif',
   },
   {
+    id: 'spoonacular',
+    text: `El objetivo de este proyecto es desarrollar una aplicación que permita mostrar recetas utilizando la API de Spoonacular. Al ingresar a la página inicial, se visualizan 10 recetas predeterminadas. Si el usuario desea explorar otras opciones, puede hacer clic en el botón "Random recipe" para cargar 10 recetas nuevas de forma aleatoria. Asimismo, se ha incluido un campo de búsqueda que permite buscar recetas por concepto y/o alimento. Para realizar la búsqueda, basta con ingresar el término deseado y presionar el botón "Buscar". Todo ello mediante solicitudes realizadas a la API de Spoonacular.`,
+    img: 'https://user-images.githubusercontent.com/97700906/231271525-03322d38-aa76-44d6-8efb-eeb90e147aa4.gif',
+  },
+  {
     id: 'hangman',
     text: `Hangman Game (Juego del ahorcado) es un proyecto realizado con React & Typescript. El objetivo del mismo era seguir mejorando en React y empezar a adentrarme en Typescript. He usado styled-components para estilos. El proyecto se ha creado en Vite, y el deploy en Firebase Hosting.`,
     img: 'https://user-images.githubusercontent.com/97700906/222248468-61ae9af0-95f1-46b0-8c3c-d5489ad62e78.gif',
