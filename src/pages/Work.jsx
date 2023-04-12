@@ -59,7 +59,7 @@ function Work() {
         >
           -ITA Wiki-
         </LinkText>
-        , desarrollado en ReactJS (Typescript - Atomic design) + NodeJS, con
+        , desarrollado en React (Typescript - Atomic design) + NodeJS, con
         metodología ágiles y de integración y distribución continua (CI/CD),
         cuyas funciones son la realización de Issues (y creación de nuevas según
         necesidades del proyecto), testing (Jest & React Testing Library &
@@ -78,7 +78,7 @@ function Work() {
           tag="xl"
         >
           También he formado parte de un equipo para el desarrollo de una App
-          (demo) en ReactJS
+          (demo) en React
           <LinkText
             target="_blank"
             rel="noreferrer noopener"
@@ -87,7 +87,7 @@ function Work() {
           >
             -ITA Game-
           </LinkText>
-          , y de este proyecto desarrollado en ReactJS + NodeJS (CI/CD),
+          , y de este proyecto desarrollado en React + NodeJS (CI/CD),
           <LinkText
             target="_blank"
             rel="noreferrer noopener"
@@ -164,7 +164,7 @@ function Work() {
           tag="xl"
         >
           En diciembre de 2022 obtuve el certificado de desarrollador Front-end
-          en ReactJS, y posteriormente realicé un Upskilling de React Avanzado,
+          en React, y posteriormente realicé un Upskilling de React Avanzado,
           impartido por la misma IT Academy, donde profundizamos en la
           generación de un código más limpio, reutilizable, seguro y capaz de
           generar aplicaciones con mayor performance; creando proyectos
