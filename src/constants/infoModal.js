@@ -28,4 +28,21 @@ export default [
     text: `Hangman Game (Juego del ahorcado) es un proyecto realizado con React & Typescript. El objetivo del mismo era seguir mejorando en React y empezar a adentrarme en Typescript. He usado styled-components para estilos. El proyecto se ha creado en Vite, y el deploy en Firebase Hosting.`,
     img: 'https://user-images.githubusercontent.com/97700906/222248468-61ae9af0-95f1-46b0-8c3c-d5489ad62e78.gif',
   },
+  {
+    id: 'github-repos',
+    text: `Este es mi primer proyecto realizado con Next.js. El objetivo es empezar a trabajar con este marco de desarrollo front-end de React y consumir datos de la API de GitHub, en este caso el listado de repositorios. Para ello he creado dos rutas (metódo de carpetas con su archivo page correspondiente): repos-javascript (JAVASCRIPT) y repos-typescript (TYPESCRIPT).
+    
+    Proyecto realizado con Next.js (React & TypeScript) y maquetado con TailwindCSS. Enfocado en la versión de escritorio pero responsive. El proyecto está formado por las siguientes carpetas: app para rutas (repos-javascript y repos-typescript) y matriz del proyecto, carpeta components para NavBar, Footer, etc., y carpeta data types, filterLanguage y navbarItems.
+
+Este proyecto usa next/font para optimizar y cargar automáticamente Roboto, una fuente personalizada de Google, y Nothing_You_Could_Do.`,
+    img: 'https://github-production-user-asset-6210df.s3.amazonaws.com/97700906/238355098-0f891de8-c855-43ea-833e-c82a6950537b.gif',
+  },
+  {
+    id: 'weather',
+    text: `El objetivo consiste en desarrollar una aplicación para consultar el clima por ciudad, utilizando los datos proporcionados por la API de OpenWeather. Tan solo necesitas ingresar el nombre de la ciudad que deseas consultar, y recibirás información detallada que incluye: clima y temperatura actual, temperatura mínima y máxima, humedad, viento, amanecer, atardecer.
+
+    Proyecto realizado con Next.js (React & JavaScript) y maquetado con TailwindCSS. Enfocado en la versión de escritorio pero responsive. El proyecto está formado únicamente desde la ruta principal (matriz del proyecto), y contiene la carpeta components para Spinner y Weather.
+    `,
+    img: 'https://github-production-user-asset-6210df.s3.amazonaws.com/97700906/238356641-7ee1c4a6-8049-41be-9c60-c4f94016f742.gif',
+  },
 ]

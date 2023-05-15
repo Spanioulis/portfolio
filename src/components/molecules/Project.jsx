@@ -24,10 +24,12 @@ function Project() {
   const [openModal3, closeModal3, isOpen3] = useModal(false)
   const [openModal4, closeModal4, isOpen4] = useModal(false)
   const [openModal5, closeModal5, isOpen5] = useModal(false)
+  const [openModal6, closeModal6, isOpen6] = useModal(false)
+  const [openModal7, closeModal7, isOpen7] = useModal(false)
 
   return (
     <>
-      {/* Ed-Mundo! */}
+      {/* ED-MUNDO! */}
       {isOpen1 &&
         infoModal
           .filter((item) => item.id === 'edmundo')
@@ -98,6 +100,75 @@ function Project() {
           </FlexBox>
         </FlexBoxStyle2>
       </FlexBoxStyle>
+      {/* GITHUB REPOS */}
+      {isOpen6 &&
+        infoModal
+          .filter((item) => item.id === 'github-repos')
+          .map((item) => (
+            <Modal closeModal={closeModal6} key={item.id}>
+              <Text>{item.text}</Text>
+              <img src={item.img} alt={item.id} />
+            </Modal>
+          ))}
+      <FlexBoxStyle direction="row">
+        <FlexBox>
+          <Title tag="h6" color={colors.font.secondary} margin="0rem">
+            GitHub Repos
+          </Title>
+          <FlexBox direction="row">
+            <Button onClick={openModal6}>
+              {width >= 850 && (
+                <img src={video} alt="Video logo" width="26px" />
+              )}
+            </Button>
+            <Text tag="xxl" margin="0rem">
+              Next.js
+            </Text>
+          </FlexBox>
+        </FlexBox>
+        <FlexBoxStyle2 justify="center">
+          <FlexBox direction="row" align="center">
+            <LinkTextStyled
+              href="https://github-repos-gilt.vercel.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {' '}
+              <img src={link} alt="Link logo" width="26px" />
+            </LinkTextStyled>
+            <LinkText
+              animationHover="animate__animated animate__headShake"
+              color={colors.font.main}
+              fontWeight="500"
+              href="https://github-repos-gilt.vercel.app/"
+              margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
+            >
+              Ver demo
+            </LinkText>
+          </FlexBox>
+          <FlexBox direction="row" align="center">
+            <LinkTextStyled
+              href="https://github.com/Spanioulis/repos-github-nextjs"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {' '}
+              <img src={repo} alt="Repo logo" width="26px" />
+            </LinkTextStyled>
+            <LinkText
+              animationHover="animate__animated animate__headShake"
+              color={colors.font.main}
+              fontWeight="500"
+              href="https://github.com/Spanioulis/repos-github-nextjs"
+              margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
+            >
+              Repositorio
+            </LinkText>
+          </FlexBox>
+        </FlexBoxStyle2>
+      </FlexBoxStyle>
       {/* RECIPE & FOODS */}
       {isOpen5 &&
         infoModal
@@ -126,7 +197,11 @@ function Project() {
         </FlexBox>
         <FlexBoxStyle2 justify="center">
           <FlexBox direction="row" align="center">
-            <LinkTextStyled href="" rel="noopener noreferrer" target="_blank">
+            <LinkTextStyled
+              href="https://recipe-food-spoonacular.netlify.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               {' '}
               <img src={link} alt="Link logo" width="26px" />
             </LinkTextStyled>
@@ -142,7 +217,11 @@ function Project() {
             </LinkText>
           </FlexBox>
           <FlexBox direction="row" align="center">
-            <LinkTextStyled href="" rel="noopener noreferrer" target="_blank">
+            <LinkTextStyled
+              href="https://github.com/Spanioulis/recipe-food-api"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               {' '}
               <img src={repo} alt="Repo logo" width="26px" />
             </LinkTextStyled>
@@ -187,7 +266,11 @@ function Project() {
         </FlexBox>
         <FlexBoxStyle2 justify="center">
           <FlexBox direction="row" align="center">
-            <LinkTextStyled href="" rel="noopener noreferrer" target="_blank">
+            <LinkTextStyled
+              href="https://hangman-game-1ce0a.web.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               {' '}
               <img src={link} alt="Link logo" width="26px" />
             </LinkTextStyled>
@@ -216,6 +299,75 @@ function Project() {
               color={colors.font.main}
               fontWeight="500"
               href="https://github.com/Spanioulis/hangman-game"
+              margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
+            >
+              Repositorio
+            </LinkText>
+          </FlexBox>
+        </FlexBoxStyle2>
+      </FlexBoxStyle>
+      {/* WEATHER */}
+      {isOpen7 &&
+        infoModal
+          .filter((item) => item.id === 'weather')
+          .map((item) => (
+            <Modal closeModal={closeModal7} key={item.id}>
+              <Text>{item.text}</Text>
+              <img src={item.img} alt={item.id} />
+            </Modal>
+          ))}
+      <FlexBoxStyle direction="row">
+        <FlexBox>
+          <Title tag="h6" color={colors.font.secondary} margin="0rem">
+            Weather App
+          </Title>
+          <FlexBox direction="row">
+            <Button onClick={openModal7}>
+              {width >= 850 && (
+                <img src={video} alt="Video logo" width="26px" />
+              )}
+            </Button>
+            <Text tag="xxl" margin="0rem">
+              OpenWeatherMap API
+            </Text>
+          </FlexBox>
+        </FlexBox>
+        <FlexBoxStyle2 justify="center">
+          <FlexBox direction="row" align="center">
+            <LinkTextStyled
+              href="https://weather-app-alpha-eight-33.vercel.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {' '}
+              <img src={link} alt="Link logo" width="26px" />
+            </LinkTextStyled>
+            <LinkText
+              animationHover="animate__animated animate__headShake"
+              color={colors.font.main}
+              fontWeight="500"
+              href="https://weather-app-alpha-eight-33.vercel.app/"
+              margin="0rem 0rem 0rem 0.3rem"
+              tag="xl"
+            >
+              Ver demo
+            </LinkText>
+          </FlexBox>
+          <FlexBox direction="row" align="center">
+            <LinkTextStyled
+              href="https://github.com/Spanioulis/weather-app"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {' '}
+              <img src={repo} alt="Repo logo" width="26px" />
+            </LinkTextStyled>
+            <LinkText
+              animationHover="animate__animated animate__headShake"
+              color={colors.font.main}
+              fontWeight="500"
+              href="https://github.com/Spanioulis/weather-app"
               margin="0rem 0rem 0rem 0.3rem"
               tag="xl"
             >

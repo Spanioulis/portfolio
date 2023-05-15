@@ -86,7 +86,7 @@ function About() {
             animationHover="animate__animated animate__jello"
             color={colors.font.tertiary}
             fontWeight="500"
-            href="https://drive.google.com/file/d/1-JWWOgFbchccmhGsuNEe0lBe6eLyMNfI/view?usp=sharing"
+            href="https://drive.google.com/file/d/10leN1ytmLKl8-H8pOUNWafqIOQaM5bcr/view?usp=sharing"
             tag="xl"
           >
             Mi CV
